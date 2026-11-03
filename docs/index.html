@@ -86,6 +86,14 @@ const store = {
   vistoSet(v){ try { localStorage.setItem('radar-visto', v); } catch(e){} }
 };
 let dados = {vagas:[]}, status = store.get(), filtro = 'novas';
+const trad = {}, verTrad = new Set();
+// ponytail: endpoint gratuito e não oficial do Google; se começar a falhar, trocar por uma API com chave
+async function traduzir(s){
+  if(!s) return '';
+  const r = await fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=pt&dt=t&q=' + encodeURIComponent(s));
+  if(!r.ok) throw new Error(r.status);
+  return (await r.json())[0].map(x => x[0]).join('');
+}
 const vistoAntes = store.vistoGet();
 
 function ha(iso){
@@ -125,15 +133,17 @@ function desenhar(){
   $('lista').innerHTML = visiveis.map(v => {
     const st = status[v.id] || 'novas';
     const novo = vistoAntes && v.encontrado > vistoAntes;
+    const tr = verTrad.has(v.id) ? trad[v.id] : null;
+    const titulo = tr ? tr.titulo : v.titulo, texto = tr ? tr.texto : v.texto;
     return `<article class="vaga ${v.golpe?.length ? 'golpe' : ''} ${st !== 'novas' ? 'feito' : ''}" data-id="${esc(v.id)}">
       <div class="meta">${novo ? '<span class="novo">NOVA</span>' : ''}<span class="sub">r/${esc(v.sub)}</span><span>${esc(ha(v.publicado || v.encontrado))}</span><span>${esc(v.autor)}</span></div>
-      <h2><a href="${esc(v.link)}" target="_blank" rel="noopener">${esc(v.titulo)}</a></h2>
+      <h2><a href="${esc(v.link)}" target="_blank" rel="noopener">${esc(titulo)}</a></h2>
       ${v.golpe?.length ? `<div class="alerta">⚠️ Sinais de golpe: ${esc(v.golpe.join(', '))}</div>` : ''}
       <div class="tags">${(v.valores||[]).map(x => `<span class="tag din">${esc(x)}</span>`).join('')}${(v.palavras||[]).slice(0,6).map(x => `<span class="tag">${esc(x)}</span>`).join('')}</div>
-      ${v.texto ? `<div class="texto curto" title="Toque para expandir">${esc(v.texto)}</div>` : ''}
+      ${texto ? `<div class="texto curto" title="Toque para expandir">${esc(texto)}</div>` : ''}
       <div class="acoes">
         <a class="pri" href="${esc(v.link)}" target="_blank" rel="noopener">Abrir no Reddit</a>
-        <button data-a="traduzir">Traduzir</button>
+        <button data-a="traduzir">${tr ? 'Ver original' : 'Traduzir'}</button>
         <button data-a="copiar">Copiar para triagem</button>
         <button data-a="respondi" class="${st==='respondi'?'on':''}">Respondi</button>
         <button data-a="descartei" class="${st==='descartei'?'on':''}">Descartar</button>
@@ -146,8 +156,12 @@ $('lista').addEventListener('click', e => {
   const a = e.target.dataset.a; if(!a) return;
   const id = card.dataset.id, v = dados.vagas.find(x => x.id === id);
   if(a === 'traduzir'){
-    const t = `${v.titulo}\n\n${v.texto || ''}`;
-    window.open('https://translate.google.com/?sl=auto&tl=pt&op=translate&text=' + encodeURIComponent(t), '_blank', 'noopener');
+    if(verTrad.delete(id)){ desenhar(); return; }
+    if(trad[id]){ verTrad.add(id); desenhar(); return; }
+    const btn = e.target; btn.textContent = 'Traduzindo…'; btn.disabled = true;
+    Promise.all([traduzir(v.titulo), traduzir(v.texto)])
+      .then(([titulo, texto]) => { trad[id] = {titulo, texto}; verTrad.add(id); desenhar(); })
+      .catch(() => { btn.textContent = 'Falhou, tentar de novo'; btn.disabled = false; });
     return;
   }
   if(a === 'copiar'){
