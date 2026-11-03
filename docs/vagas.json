@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-03T23:30:33+00:00",
+ "atualizado": "2026-11-03T23:31:24+00:00",
  "vagas": [
   {
    "id": "t3_1xkz1y3",
@@ -14,7 +14,9 @@
    ],
    "golpe": [],
    "valores": [],
-   "encontrado": "2026-11-03T23:30:03+00:00"
+   "encontrado": "2026-11-03T23:30:03+00:00",
+   "titulo_pt": "[contratação] Desenvolvedor de software de nível sênior com inglês proficiente",
+   "texto_pt": "O que estou construindo: uma equipe pequena e avaliada de engenheiros fortes que exercem diversas funções remotas juntos, em vez de sozinhos. Não procuro uma multidão - procuro de 3 a 5 pessoas em quem possa confiar e em quem possa investir a longo prazo. O modelo, claramente: minha equipe cuida do pipeline – sourcing de funções, adaptação de aplicativos, agendamento de entrevistas. Você nunca passa noites preenchendo formulários. Você aparece para entrevistas. Esse é o seu trabalho principal. Você é o rosto e a voz técnica. Nós o preparamos cuidadosamente com antecedência e o apoiamos ao vivo durante a sessão. Após a oferta, a carga é compartilhada. Meus assistentes técnicos cobrem reuniões, tickets, avaliações e resultados de rotina, para que o peso operacional de múltiplas funções permaneça gerenciável. Você permanece responsável pela qualidade e pelos resultados – você não é um fantasma, você é o líder. O resultado: uma renda adicional significativa sem o esgotamento que geralmente acompanha o malabarismo com papéis solo. Por que isso funciona melhor do que fazer tudo sozinho: um único engenheiro que se inscreve sozinho consegue talvez algumas entrevistas por mês. Uma equipe coordenada com um pipeline real obtém ofertas consistentes – e ofertas consistentes são o que cria alavancagem de negociação e estabilidade de receita. O que preciso de você: Comunicação forte e presença profissional nas entrevistas - isso é o que não podemos construir para você. Discrição e confiabilidade. Esta é uma colaboração de longo prazo baseada na confiança, não um trabalho único. Interesse genuíno no modelo conforme descrito O que você obtém: Um pipeline constante de controle remoto controlado"
   },
   {
    "id": "t3_1xd0zw8",
@@ -29,7 +31,9 @@
    ],
    "golpe": [],
    "valores": [],
-   "encontrado": "2026-11-03T23:24:23+00:00"
+   "encontrado": "2026-11-03T23:24:23+00:00",
+   "titulo_pt": "[EUA][Hiring] Codifique palavras cruzadas personalizadas com propriedades incomuns.",
+   "texto_pt": "Olá! Estou procurando alguém para ajudar a codificar um jogo de palavras cruzadas personalizado com algumas propriedades incomuns. As propriedades incomuns são que certas pistas e certas partes da grade só aparecem depois que o solucionador preencheu partes do quebra-cabeça. O quebra-cabeça também possui um elemento “rebus”, o que significa que o solucionador precisa inserir várias letras em determinados quadrados. O quebra-cabeça precisaria ser hospedado em um site ou em um formato para download que estivesse amplamente disponível. O site Crossshare fornece um modelo para isso. Você não precisa criar as palavras cruzadas reais – isso já está feito. Eu compartilharia um modelo no Microsoft Excel. Publiquei um pedido semelhante no início do ano. Estou reformulando o projeto após alguns atrasos iniciais. enviado por /u/Western_Attempt_2387 [link] [comentários]"
   },
   {
    "id": "t3_1qtzyvt",
@@ -44,7 +48,9 @@
    ],
    "golpe": [],
    "valores": [],
-   "encontrado": "2026-11-03T23:24:23+00:00"
+   "encontrado": "2026-11-03T23:24:23+00:00",
+   "titulo_pt": "[EUA] Contratação para: Criar driver de impressão para serviço efax utilizando API existente.",
+   "texto_pt": "Se você tem experiência no desenvolvimento de drivers de impressão personalizados para Windows (mac e Linux podem ser projetos de acompanhamento) e pode integrar a API HumbleFax, estaríamos interessados ​​em contratá-lo. Idealmente, gostaríamos que o usuário só precisasse inserir suas credenciais de API ou nome de usuário/senha em uma caixa de diálogo pop-up para que tudo funcionasse. A pessoa seleciona esta “impressora” ao imprimir e pergunta para qual número de fax enviar. Pontos extras para atualizações de status, como a página \"impressa\" (enviada por fax) até o momento e sucesso/falha, mas isso pode não combinar bem com as convenções de driver de impressora padrão. É melhor manter as coisas simples. De qualquer forma, deixe-me saber se você tem interesse e experiência. enviado por /u/Adam7288 [link] [comentários]"
   },
   {
    "id": "t3_1qd2dnx",
@@ -59,7 +65,9 @@
    ],
    "golpe": [],
    "valores": [],
-   "encontrado": "2026-11-03T23:24:23+00:00"
+   "encontrado": "2026-11-03T23:24:23+00:00",
+   "titulo_pt": "[EUA][Contratação] Palavras cruzadas personalizadas com propriedades incomuns.",
+   "texto_pt": "Olá! Estou procurando alguém para ajudar a codificar um jogo de palavras cruzadas personalizado com algumas propriedades incomuns. As propriedades incomuns são que certas pistas e certas partes da grade só aparecem depois que o solucionador preencheu partes do quebra-cabeça. O quebra-cabeça também possui um elemento “rebus”, o que significa que o solucionador precisa inserir várias letras em determinados quadrados. O quebra-cabeça precisaria ser hospedado em um site ou em um formato para download que estivesse amplamente disponível. Você não precisa criar as palavras cruzadas reais – isso já está feito. Eu compartilharia um modelo no Microsoft Excel. enviado por /u/Western_Attempt_2387 [link] [comentários]"
   },
   {
    "id": "t3_1p14znj",
@@ -75,7 +83,9 @@
    ],
    "golpe": [],
    "valores": [],
-   "encontrado": "2026-11-03T23:24:23+00:00"
+   "encontrado": "2026-11-03T23:24:23+00:00",
+   "titulo_pt": "[EUA][Contratação] Desenvolvedor full stack para construção de plataforma personalizada em estilo white label.",
+   "texto_pt": "Olá, estou procurando um desenvolvedor baseado nos EUA ou uma pequena equipe de desenvolvimento para ajudar a construir uma plataforma moderna em estilo white label para meu negócio. A plataforma precisa extrair itens de um CMS e exibi-los de forma limpa e controlada. Serão necessários logins de usuário, um painel simples, uma API para plataformas externas buscarem dados e a capacidade de escolher exatamente quais itens aparecem para diferentes usuários ou grupos. A construção deve usar o que for considerado a abordagem mais robusta e escalável atualmente, em vez de pilhas desatualizadas. Principais requisitos: • Login e painel do usuário • Capacidade de mostrar diferentes conjuntos de itens para diferentes usuários • Integração com CMS • Endpoint de API para sistemas externos solicitarem dados • Front-end limpo, rápido e back-end confiável • Estrutura amigável com etiqueta branca Estou aberto a recomendações sobre a melhor pilha de tecnologia. Quero principalmente que a construção seja estável, escalável e fácil de gerenciar a longo prazo. Se estiver interessado, envie: • Uma breve introdução • Exemplos relevantes ou links de portfólio • Suas tarifas típicas • Disponibilidade estimada Agradecemos antecipadamente enviado por /u/mjwb99 [link] [comentários]"
   },
   {
    "id": "t3_1hsay30",
@@ -90,7 +100,9 @@
    ],
    "golpe": [],
    "valores": [],
-   "encontrado": "2026-11-03T23:24:23+00:00"
+   "encontrado": "2026-11-03T23:24:23+00:00",
+   "titulo_pt": "[EUA][Hiring] Ajuda para integração de API com Notion e Google Calendar.",
+   "texto_pt": "Olá a todos! Estou trabalhando em um script que integrará um GPT personalizado ao Notion e ao Google Calendar. Eu tenho muito código escrito, honestamente só preciso de ajuda para superar o obstáculo final, pois sou um pouco novato! O gerenciador de tarefas que uso é um pouco mais complicado do que uma lista simples e meu GPT personalizado precisa poder ter um pouco mais de ação no lado da ação. Deixe-me saber se você pode atender uma ligação para me ajudar a finalizar as últimas peças. Basicamente quero que o GPT adicione tarefas que eu conto e depois agende ao longo da semana. Vamos discutir! Atenciosamente enviado por /u/Jahkle [link] [comentários]"
   },
   {
    "id": "t3_1g170iz",
@@ -108,7 +120,9 @@
    ],
    "golpe": [],
    "valores": [],
-   "encontrado": "2026-11-03T23:24:23+00:00"
+   "encontrado": "2026-11-03T23:24:23+00:00",
+   "titulo_pt": "[EUA] [contratação] de um desenvolvedor python full stack e próximo desenvolvedor js para nosso Saas de longo prazo.",
+   "texto_pt": "Olá desenvolvedores 💪 Estamos procurando um desenvolvedor web full-stack superestrela que seja altamente proficiente no trabalho em aplicativos SaaS de nível de produção. Capaz de lidar com todo o pipeline de desenvolvimento, desde o design do banco de dados e desenvolvimento de back-end até a implementação e implantação de front-end. Auto-motivado, aprendiz rápido e confortável trabalhando de forma independente. Precisamos de alguém que se mova rápido!! Procuramos alguém que procure um cargo de longo prazo - não queremos alguém que vá embora após 1 ou 2 meses! Então, se você é um superstar e se encaixa perfeitamente - garantimos segurança no emprego a longo prazo :) Habilidades técnicas: -Muito Python, Flask, Simultaneidade, trabalhando com dados, soquetes, dados ao vivo. você pode construir APIs e integrações de back-end. -JWT/autenticação/integrações de pagamentos Stripe/integrações de e-mail -React/Next JS para frontend, você pode construir UI's em alto nível e possuir habilidades de design. -Especialista em Postgress para db, serviços AWS. -Pode fazer implantações, Docker, CI/CD. Habilidades pessoais: Excelente inglês, tanto escrito quanto falado. Independente - você precisará aprender muitas coisas sozinho, usar novas ferramentas e tecnologias. Comunicação – esta é a prioridade número 1 para nós. procurando alguém que se comunique rapidamente, responda rapidamente, seja ativo e possa participar de uma reunião sempre que necessário. Envia o código RÁPIDO! se você gostaria de se inscrever - preencha este formulário do Google: forms[.]gle/aa9ZWQpXfTbXXWdJ8 P.S > Se você não trabalhou com python + flask + next js + postgress no passado - não faz sentido ap"
   },
   {
    "id": "t3_1f9zdhf",
@@ -123,7 +137,9 @@
    ],
    "golpe": [],
    "valores": [],
-   "encontrado": "2026-11-03T23:24:23+00:00"
+   "encontrado": "2026-11-03T23:24:23+00:00",
+   "titulo_pt": "[EUA][Contratação] Desenvolvedor de aplicativos iOS para aplicativo de bem-estar baseado em SwiftUI.",
+   "texto_pt": "Olá, atualmente estou procurando um desenvolvedor de aplicativos iOS para me ajudar a concluir um projeto no qual venho trabalhando nos últimos meses. Embora eu mesmo tenha conseguido construir grande parte do front-end usando SwiftUI, minha experiência é limitada e estou começando a perceber que preciso de mais conhecimento prático para dar vida a este projeto. Visão geral do projeto: fiz um progresso considerável no front-end – cerca de 75% está concluído – mas provavelmente requer refinamento e seria ótimo se você pudesse revisar e melhorar o que está disponível quando necessário. O back-end precisa de muito mais trabalho (muito, muito). Tenho usado Swift Beta 6, Xcode Beta e Firebase. O aplicativo e seu design são protegidos por direitos autorais, por isso estou procurando alguém de confiança para me ajudar a finalizá-lo. Pilha de tecnologia: • SwiftUI (Beta 6) • Xcode Beta • Firebase para back-end Necessidades contínuas: estou equilibrando esse trabalho com a parentalidade, por isso não posso dedicar tanto tempo quanto gostaria a este projeto. É por isso que preciso de alguém que possa ajudar a concluir a parte de codificação, auxiliar na implantação e, potencialmente, oferecer suporte a uma versão do Android no futuro (embora isso não seja exigido de forma alguma). Isso poderia levar a uma colaboração contínua, já que tenho várias outras ideias de aplicativos em andamento. Compensação: não tenho um orçamento enorme para este primeiro aplicativo, mas estou oferecendo uma compensação justa com base na sua experiência. Se esse projeto der certo, os aplicativos futuros terão mais recursos para oferecer melhores salários (obviamente). Se você estiver interessado, entre em contato e w"
   },
   {
    "id": "t3_1c8cckb",
@@ -138,7 +154,9 @@
    ],
    "golpe": [],
    "valores": [],
-   "encontrado": "2026-11-03T23:24:23+00:00"
+   "encontrado": "2026-11-03T23:24:23+00:00",
+   "titulo_pt": "[EUA][Contratação] WebApp Dev para Simple WebApp usando Plaid API.",
+   "texto_pt": "Minha empresa está procurando alguém que possa desenvolver uma ferramenta para nos ajudar em nossos acordos de pagamento com nossos clientes. Queremos sacar automaticamente um valor de pagamento específico com base em quando o cliente recebe o dinheiro depositado em sua conta de uma fonte específica. Ele precisa ser capaz de detectar o depósito e então iniciar uma transferência de X% para nossa conta bancária de acordo com nosso contrato. Temos um site de exemplo de um aplicativo que faz isso para referência que podemos fornecer para você! Pelo que podemos dizer, tudo isso deve poder ser feito por meio da API Plaid. Se isso parecer algo que você pode fazer, entre em contato e poderemos discutir preços, bem como prazos. Obrigado! enviado por /u/tinyJman [link] [comentários]"
   },
   {
    "id": "t3_1bfb59r",
@@ -156,7 +174,9 @@
     "crypto"
    ],
    "valores": [],
-   "encontrado": "2026-11-03T23:24:23+00:00"
+   "encontrado": "2026-11-03T23:24:23+00:00",
+   "titulo_pt": "[EUA][Contratação] Procurando vários engenheiros.",
+   "texto_pt": "Abaixo estão os conjuntos de habilidades que serão aplicáveis ​​ao projeto em seus estágios iniciais. Um candidato que tenha experiência em tudo isso seria raro, mas alguém que tenha duas ou mais habilidades desta lista em múltiplas categorias seria ideal para se integrar rapidamente e aprender o resto. Experiência com ferramentas específicas listadas entre parênteses seria um bônus. Frontend: - TypeScript (React, React Native, expo) Infraestrutura de backend: - Cloud services (AWS) - Linux - SQL (Postgres) Gerenciamento de infraestrutura: - Terraform - Kubernetes (Helm) - Integração Contínua/Entrega Contínua (Github Actions) Contratos inteligentes: - Rust - Solana blockchain **Pagamento em criptografia * * enviado por /u/houseunderpool [link] [comentários]"
   },
   {
    "id": "t3_15h3evn",
