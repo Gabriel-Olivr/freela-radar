@@ -191,7 +191,9 @@
    ],
    "golpe": [],
    "valores": [],
-   "encontrado": "2026-11-03T23:24:23+00:00"
+   "encontrado": "2026-11-03T23:24:23+00:00",
+   "titulo_pt": "[Estados Unidos]Contratar um programador para ajudar a automatizar meu fluxo de trabalho.",
+   "texto_pt": "Estou trabalhando em um site de guia de estudo. Passo muito tempo clicando em links para ver se a tarefa está disponível. Gostaria de contratar alguém para criar um programa que abra todas as páginas que contenham a frase \"esta seção ainda não foi escrita\". Dessa forma, não preciso clicar manualmente para descobrir. Não sou muito experiente em tecnologia, então você também teria que me dar instruções explícitas sobre como executar o programa. Eu tenho um telefone Android e um Surface Pro. Ao responder, forneça sua taxa para o projeto e o retorno esperado. Obrigado! [link] [comentários]"
   },
   {
    "id": "t3_12tmjws",
@@ -206,7 +208,9 @@
    ],
    "golpe": [],
    "valores": [],
-   "encontrado": "2026-11-03T23:24:23+00:00"
+   "encontrado": "2026-11-03T23:24:23+00:00",
+   "titulo_pt": "[Estados Unidos] Interessado em contratar para criar uma pesquisa na web para dificuldade de balanceamento.",
+   "texto_pt": "Estou trabalhando em um divertido jogo de perguntas/cartões flash envolvendo a identificação de estados com base em strings exclusivas em seus nomes. Por exemplo, nenhum outro estado além de Nova Jersey tem “RS” no nome em qualquer lugar. Já fiz uma lista de 474 pistas, todas possíveis sequências exclusivas de 4 caracteres ou menos nos 50 estados (ignorei espaços e letras maiúsculas, então \"WM\" é exclusivo do Novo México). O que eu gostaria de fazer é classificar as cartas em 4 grupos de dificuldade que sejam bastante equilibrados, mas além da dificuldade de avaliar 474 pistas de forma consistente, também sinto que seria muito tendencioso por já ter examinado a lista para criá-las. ​ Idealmente, eu gostaria de algum tipo de formulário da web que pudesse vincular em alguns subreddits que levassem os participantes a um site que oferecesse um código aleatório da lista, eles teriam que adivinhar qual estado corresponde e adivinhar a dificuldade da pista de 1 a 4. O site continuará a fornecê-los com novas pistas até que eles tenham visto todas ou fiquem entediados. Então, eu/nós/você/o que quer que seja, deixamos rodar por um tempo até que haja dados suficientes para tirar uma média (talvez um mínimo de 8 a 10 envios por pista). Você não precisa fazer nenhuma filtragem ou arredondamento nem nada com essas médias, apenas me envie os dados brutos e eu resolverei isso. (csv ou xlsx seria o ideal). Como não tenho meios (ou ideia de como) hospedar isso, precisaria de alguém que estivesse disposto a fazer isso também, ou se existem serviços criados para algo assim. Eu não esperaria que você o executasse"
   },
   {
    "id": "t3_126s2ou",
@@ -221,7 +225,9 @@
    ],
    "golpe": [],
    "valores": [],
-   "encontrado": "2026-11-03T23:24:23+00:00"
+   "encontrado": "2026-11-03T23:24:23+00:00",
+   "titulo_pt": "[Estados Unidos] Contratação de um programador para ajudar em um antigo projeto de fãs de jogos de console.",
+   "texto_pt": "Faço parte de uma pequena comunidade de pessoas que, através do entusiasmo e do tempo voluntário de algumas pessoas experientes, têm desenvolvido uma versão mod do SoulCalibur 2, SC2Plus. Um bom progresso foi feito nos últimos dois anos através de ajustes e engenharia reversa, mas ultimamente temos enfrentado um obstáculo há algum tempo. A maioria de nós não tem ideia do que estamos fazendo, e uma ou duas pessoas que fazem isso não podem trabalhar como voluntários o tempo todo e estão ocupadas demais com suas próprias vidas e carreiras para fazê-lo de forma remunerada. Para que o desenvolvimento do nosso mod prossiga, precisamos contratar alguém com as habilidades necessárias para desenvolver uma ferramenta para nós, para que possamos quebrar as barreiras que enfrentamos atualmente. Atualmente, raspamos e reunimos o máximo de dinheiro possível da nossa comunidade e atualmente podemos pagar um pouco mais de 1 mil a quem puder nos ajudar. Precisamos de alguém com conhecimento em Python, estruturas de arquivos de modelos 3D e Noesis. O que procuramos especificamente é um plugin/conjunto de plugins para Noesis que nos permitirá importar, editar e exportar para 3 formatos de modelos proprietários separados para as versões Xbox, Gamecube e PS2 do SoulCalibur 2, incluindo ossos e dados de malha. Conseguimos compilar um pouco de documentação sobre as diferentes estruturas de arquivos e já conseguimos abrir e modificar pelo menos uma, mas a ferramenta que foi desenvolvida só foi feita para Xbox e IIRC, o cara que a fez nem se lembra mais de nada sobre ela. Nós estamos"
   },
   {
    "id": "t3_11uiij7",
@@ -236,7 +242,9 @@
    ],
    "golpe": [],
    "valores": [],
-   "encontrado": "2026-11-03T23:24:23+00:00"
+   "encontrado": "2026-11-03T23:24:23+00:00",
+   "titulo_pt": "[Alemanha] Contratar alguém familiarizado com Python para programação de microcontroladores.",
+   "texto_pt": "Eu tenho um pequeno projeto no qual estou trabalhando e não consigo entender a pinagem expressa do adafruit itsy bitsy m0. Estou procurando um script básico que, quando um interruptor momentâneo é pressionado, 1 led acenderá, 3 leds acenderão totalmente, depois diminuirão sequencialmente e depois apagarão e um clipe de áudio será reproduzido durante a sequência de 10 segundos. Quando o interruptor momentâneo é pressionado uma segunda vez durante a sequência, ele cancela a sequência. Após a conclusão da sequência de 10 segundos, o projeto é desligado até ser reiniciado pressionando o botão momentâneo. Por favor, envie-me uma mensagem se estiver interessado, e podemos discutir o pagamento e os detalhes. Editar: a posição está preenchida. enviado por /u/Raymare1988 [link] [comentários]"
   },
   {
    "id": "t3_11nearq",
@@ -252,7 +260,9 @@
    ],
    "golpe": [],
    "valores": [],
-   "encontrado": "2026-11-03T23:24:23+00:00"
+   "encontrado": "2026-11-03T23:24:23+00:00",
+   "titulo_pt": "[Estados Unidos].[Contratação] Contratar um programador para ajudar a construir um script para ajudar a gerenciar meu time de beisebol fantasia.",
+   "texto_pt": "Boa noite, O que estou pedindo provavelmente é fácil, mas seria difícil para mim aprender e estou procurando ajuda para contratar. Eu gostaria de um script que pudesse executar, que organizasse as escalações da minha liga de beisebol fantasia e organizasse tudo em uma planilha. Atualmente, tenho que copiar e colar, reorganizar itens e organizar cerca de 20 minutos apenas para tornar os dados úteis. É irritante. Preciso dos dados para poder pesquisar no Vlookup e compará-los com um autor popular de classificação de beisebol de fantasia da dinastia que li para poder identificar facilmente quando caras foram dispensados. Deixe-me saber se esta é sua opção ou se preciso postar em um grupo diferente. obrigado. enviado por /u/monkeymobsters [link] [comentários]"
   },
   {
    "id": "t3_idwpop",
@@ -267,7 +277,9 @@
    ],
    "golpe": [],
    "valores": [],
-   "encontrado": "2026-11-03T23:24:23+00:00"
+   "encontrado": "2026-11-03T23:24:23+00:00",
+   "titulo_pt": "[CONTRATAÇÃO] Codificador para Discord Account Creator Bot - qualquer idioma",
+   "texto_pt": "Olá, Procurando um codificador para codificar um bot criador de conta discord. nós fornecemos proxies, bem como recursos de resolução de captcha. As funções incluem: criar uma conta discord conectando a conta do youtube ao servidor de ingresso na conta discord (parte das vantagens da conta do youtube) excluir a mensagem de boas-vindas (mensagem que diz \"xy ingressou\") daquele orçamento do servidor em torno de 150 $. PM [link] [comentários]"
   },
   {
    "id": "t3_du2mdc",
@@ -285,7 +297,9 @@
     "$100",
     "$50 per hour"
    ],
-   "encontrado": "2026-11-03T23:24:23+00:00"
+   "encontrado": "2026-11-03T23:24:23+00:00",
+   "titulo_pt": "[CONTRATAÇÃO] WebDeveloper para produção em massa de planejamento de rotas/direções/sites baseados em mapas",
+   "texto_pt": "Olá querido desenvolvedor Web do Reddit! Somos a empresa Midwest Venture Group e estamos procurando desenvolvedores web para ampliar nosso conjunto de sites baseados em planejamento de rotas/direções/mapas. Alguns exemplos: https://www.mapslive.net/ https://www.mapsonline.us/ http://www.directionswiz.com/ https://www.metrotransit.co/ O que é importante: você é capaz de criar novas reviravoltas no design do site. É importante que o site pareça ser um site novo e independente para a IA do Google - caso contrário, nosso modelo de negócios fracassará. O que é simples: ter mais participação no mercado diluindo a oferta de sites de mapas. Pagamos US$ 100 por cada design de site exclusivo. Dependendo de sua habilidade e dedicação, isso equivale a US$ 50 por hora. A maioria dos nossos colaboradores consegue terminar um site em cerca de 3 horas no máximo! Isso inclui os textos recém-escritos. Se despertamos o seu interesse, envie-nos uma mensagem privada com um breve motivo pelo qual você seria a contratação certa e seus dados de contato. Boa sorte! [link] [comentários]"
   },
   {
    "id": "t3_1xl395d",
@@ -303,7 +317,9 @@
    "valores": [
     "$15/hr"
    ],
-   "encontrado": "2026-11-03T23:21:18+00:00"
+   "encontrado": "2026-11-03T23:21:18+00:00",
+   "titulo_pt": "[Contratação] Solução de problemas de licença de software",
+   "texto_pt": "Olá, procuro um desenvolvedor experiente em Engenharia Reversa/Segurança de Software. Eu possuo um bot de software que requer uma chave de licença para acessar. Preciso de um especialista para inspecionar o mecanismo de licenciamento, identificar o problema e me ajudar a restaurar o acesso ou reparar o sistema de licenciamento. Habilidades necessárias: * Engenharia reversa * Depuração Python / JavaScript * Sistemas de licença de software * Segurança de software Este é um projeto pago. Estou pronto para começar imediatamente. Por favor, envie-me sua experiência, portfólio e preço estimado. orçamento $ 15 / hora + Obrigado. enviado por /u/ouijla [link] [comentários]"
   },
   {
    "id": "t3_1xl1h1x",
@@ -321,7 +337,9 @@
    "valores": [
     "$50"
    ],
-   "encontrado": "2026-11-03T23:21:18+00:00"
+   "encontrado": "2026-11-03T23:21:18+00:00",
+   "titulo_pt": "[CONTRATAÇÃO] Criador de bot para plataforma de e-commerce (Lazada)",
+   "texto_pt": "Olá! Procuro alguém que me ajude a criar um bot para uma plataforma de comércio eletrônico para automatizar compras. Por favor, envie-me um DM se você tiver experiência no desenvolvimento de tais bots de comércio eletrônico. Orçamento: $ 50-90 USD Preciso que outros programas sejam desenvolvidos também, os quais estão abertos para discussão. enviado por /u/Gold_Rush5129 [link] [comentários]"
   },
   {
    "id": "t3_1xl1cr4",
@@ -339,7 +357,9 @@
    "valores": [
     "$15/hr"
    ],
-   "encontrado": "2026-11-03T23:21:18+00:00"
+   "encontrado": "2026-11-03T23:21:18+00:00",
+   "titulo_pt": "[Contratação] Solução de problemas de licença de software – US$ 15/hora +",
+   "texto_pt": "Olá, procuro um desenvolvedor experiente em Engenharia Reversa/Segurança de Software. Eu possuo um bot de software que requer uma chave de licença para acessar. Preciso de um especialista para inspecionar o mecanismo de licenciamento, identificar o problema e me ajudar a restaurar o acesso ou reparar o sistema de licenciamento. Habilidades necessárias: * Engenharia reversa * Depuração Python / JavaScript * Sistemas de licença de software * Segurança de software Este é um projeto pago. Estou pronto para começar imediatamente. Por favor, envie-me sua experiência, portfólio e preço estimado. Obrigado. enviado por /u/ouijla [link] [comentários]"
   }
  ]
 }
