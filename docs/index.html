@@ -32,9 +32,10 @@ h1{font-size:1.5rem; margin:0; letter-spacing:-.01em}
 .abas button{border:0; background:transparent; color:var(--muted); font:600 .85rem var(--sans); padding:7px 6px; border-radius:7px; cursor:pointer; white-space:nowrap}
 .abas button[aria-pressed="true"]{background:var(--surface); color:var(--ink); box-shadow:0 1px 2px rgba(0,0,0,.12)}
 .abas .n{font-family:var(--mono); font-weight:400; opacity:.7; margin-left:3px}
+select{font:inherit; font-size:.85rem; color:var(--ink); background:var(--surface); border:1px solid var(--line); border-radius:9px; padding:8px 9px}
 input[type=search]{flex:1 1 180px; min-width:0; font:inherit; color:var(--ink); background:var(--surface); border:1px solid var(--line); border-radius:9px; padding:8px 11px}
 label.chk{display:flex; gap:6px; align-items:center; font-size:.85rem; color:var(--muted); cursor:pointer}
-button:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
 .lista{display:grid; gap:10px}
 .vaga{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:14px; display:grid; gap:8px; min-width:0}
 .vaga.golpe{border-color:var(--bad)}
@@ -70,6 +71,15 @@ footer{margin-top:24px; font-size:.8rem; color:var(--muted)}
         <button data-f="todas" aria-pressed="false">Todas<span class="n" id="n-todas"></span></button>
       </div>
       <input type="search" id="busca" placeholder="Buscar: python, c#, sheets…" aria-label="Buscar">
+      <select id="preco" aria-label="Filtro de preço">
+        <option value="">Qualquer preço</option>
+        <option value="com">Só com preço</option>
+        <option value="h:20">Por hora ≥ $20</option>
+        <option value="h:40">Por hora ≥ $40</option>
+        <option value="f:100">Fechado ≥ $100</option>
+        <option value="f:500">Fechado ≥ $500</option>
+        <option value="f:1000">Fechado ≥ $1.000</option>
+      </select>
       <label class="chk"><input type="checkbox" id="semGolpe" checked> Esconder suspeitas</label>
     </div>
   </header>
@@ -113,13 +123,33 @@ function saude(){
 function prompt(v){
   return `Triagem desta vaga do Reddit (r/${v.sub}):\n\nTítulo: ${v.titulo}\nLink: ${v.link}\n\n${v.texto}\n\nMe diga: horas estimadas, preço fechado sugerido, riscos/sinais de golpe, 2 perguntas para o cliente e a DM em inglês pronta para eu revisar.`;
 }
+// "$75/hour", "$1,500", "$2k", "usd 500" -> maior valor por hora (h) e maior valor fechado (f)
+function precos(v){
+  const p = {h:0, f:0};
+  for(const s of v.valores || []){
+    const m = s.match(/(\d[\d,]*(?:\.\d+)?)\s*(k)?/i); if(!m) continue;
+    const n = parseFloat(m[1].replace(/,/g, '')) * (m[2] ? 1000 : 1);
+    const t = /(\/|per)\s*(hr|hour|h)\b/i.test(s) ? 'h' : 'f';
+    p[t] = Math.max(p[t], n);
+  }
+  return p;
+}
+function passaPreco(v, filtro){
+  if(!filtro) return true;
+  const p = precos(v);
+  if(filtro === 'com') return p.h > 0 || p.f > 0;
+  const [t, min] = filtro.split(':');
+  return p[t] >= Number(min);
+}
 function desenhar(){
   const q = $('busca').value.trim().toLowerCase();
-  const semGolpe = $('semGolpe').checked;
+  const semGolpe = $('semGolpe').checked, preco = $('preco').value;
   const cont = {novas:0, respondi:0, descartei:0, todas:0};
   const visiveis = [];
-  for(const v of dados.vagas){
+  const recentes = [...dados.vagas].sort((a, b) => (b.publicado || b.encontrado || '').localeCompare(a.publicado || a.encontrado || ''));
+  for(const v of recentes){
     if(semGolpe && v.golpe?.length) continue;
+    if(!passaPreco(v, preco)) continue;
     if(q && !(`${v.titulo} ${v.texto} ${(v.palavras||[]).join(' ')}`.toLowerCase().includes(q))) continue;
     const st = status[v.id] || 'novas';
     cont[st]++; cont.todas++;
@@ -182,6 +212,7 @@ $('abas').addEventListener('click', e => {
 });
 $('busca').addEventListener('input', desenhar);
 $('semGolpe').addEventListener('change', desenhar);
+$('preco').addEventListener('change', desenhar);
 
 async function carregar(){
   try {
