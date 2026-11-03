@@ -1,5 +1,5 @@
 {
-  "subreddits": ["forhire", "hireaprogrammer", "jobbit", "freelance_forhire", "DoneDirtCheap", "slavelabour", "Jobs4Bitcoins", "gameDevClassifieds", "WorkOnline", "hiring"],
+  "subreddits": ["forhire", "hireaprogrammer", "jobbit", "DoneDirtCheap", "slavelabour", "Jobs4Bitcoins", "gameDevClassifieds", "WorkOnline", "hiring"],
   "palavras": [
     "python", "pandas", "polars", "scrape", "scraper", "scraping", "crawler", "selenium", "playwright",
     "etl", "pipeline", "data engineer", "data cleaning", "clean data", "csv",
@@ -20,5 +20,6 @@
   "max_whatsapp_por_ciclo": 4,
   "avisar_golpe_no_whatsapp": false,
   "guardar_ultimas": 300,
-  "heartbeat_min": 60
+  "heartbeat_min": 60,
+  "max_dias": 15
 }

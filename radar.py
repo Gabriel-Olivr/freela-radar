@@ -209,8 +209,17 @@ def carregar_vagas():
         return {"atualizado": None, "vagas": []}
 
 
+def recente(v):
+    """Post com até max_dias de idade; depois disso alguém já pegou a vaga."""
+    data = v.get("publicado") or v.get("encontrado")
+    try:
+        return (datetime.now(timezone.utc) - datetime.fromisoformat(data)).days < CFG.get("max_dias", 15)
+    except (TypeError, ValueError):
+        return True
+
+
 def salvar_vagas(dados):
-    dados["vagas"] = sorted(dados["vagas"], key=lambda v: (v["encontrado"], v.get("publicado", "")), reverse=True)[:CFG["guardar_ultimas"]]
+    dados["vagas"] = sorted(filter(recente, dados["vagas"]), key=lambda v: (v["encontrado"], v.get("publicado", "")), reverse=True)[:CFG["guardar_ultimas"]]
     ARQ_VAGAS.parent.mkdir(exist_ok=True)
     ARQ_VAGAS.write_text(json.dumps(dados, ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -237,7 +246,7 @@ def ciclo(a):
     primeira = dados["atualizado"] is None
     novas = []
     for post in reversed(posts):
-        if post["id"] in conhecidas:
+        if post["id"] in conhecidas or not recente(post):
             continue
         av = avaliar(post)
         if not av:
