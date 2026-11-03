@@ -1,5 +1,5 @@
 {
-  "subreddits": ["forhire", "hireaprogrammer", "jobbit", "freelance_forhire", "DoneDirtCheap", "slavelabour"],
+  "subreddits": ["forhire", "hireaprogrammer", "jobbit", "freelance_forhire", "DoneDirtCheap", "slavelabour", "Jobs4Bitcoins", "gameDevClassifieds", "WorkOnline", "hiring"],
   "palavras": [
     "python", "pandas", "polars", "scrape", "scraper", "scraping", "crawler", "selenium", "playwright",
     "etl", "pipeline", "data engineer", "data cleaning", "clean data", "csv",
@@ -8,7 +8,7 @@
     "dashboard", "streamlit", "api", "c#", ".net", "dotnet", "asp.net",
     "blazor", "winforms", "wpf", "entity framework", "telegram bot", "bot"
   ],
-  "excluir": ["unpaid", "equity only", "rev share", "revenue share", "commission only", "onlyfans", "tiktok poster"],
+  "excluir": ["unpaid", "equity only", "rev share", "revenue share", "commission only", "onlyfans", "tiktok poster", "full-time", "full time", "on-site", "onsite", "in office", "hybrid", "salary", "benefits"],
   "sinais_golpe": [
     "telegram me", "whatsapp", "on signal", "discord me", "text me", "dm on tg",
     "crypto", "usdt", "wallet", "upwork account", "rent your account",
