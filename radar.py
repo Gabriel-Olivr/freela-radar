@@ -269,6 +269,16 @@ def ciclo(a):
     return len(posts), len(novas)
 
 
+def so_traduzir(a):
+    """Com o Reddit fora do ar, ao menos traduz e publica as vagas pendentes."""
+    dados = carregar_vagas()
+    n = traduzir_pendentes(dados["vagas"])
+    if n:
+        salvar_vagas(dados)
+        if a.push:
+            publicar(f"radar: {n} tradução(ões)")
+
+
 def avaliaveis_ordenadas(vagas):
     # mais palavras-chave batendo primeiro; empate: a mais recente
     return sorted(vagas, key=lambda v: (len(v["palavras"]), v["publicado"]), reverse=True)
@@ -303,8 +313,10 @@ def main():
             if e.code in (403, 429) and time.time() - ultimo_aviso_bloqueio > 6 * 3600:
                 avisar(f"⚠️ Radar: o Reddit está recusando os pedidos (erro {e.code}). Vou continuar tentando.")
                 ultimo_aviso_bloqueio = time.time()
+            so_traduzir(a)
         except (urllib.error.URLError, TimeoutError, ET.ParseError) as e:
             log(f"falha de rede ou feed: {e}")
+            so_traduzir(a)
         if a.uma_vez or a.arquivo:
             break
         time.sleep(espera + random.randint(0, 45))
