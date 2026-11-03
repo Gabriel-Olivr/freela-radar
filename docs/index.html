@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#101216" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f3f4f7" media="(prefers-color-scheme: light)">
+<title>Radar de Freela</title>
+<style>
+:root{
+  --bg:#f3f4f7; --surface:#fff; --sunk:#e9ebf0; --ink:#15171c; --muted:#5a6170; --line:#dcdfe6;
+  --accent:#c93a0c; --accent-soft:#fbe7df; --ok:#0d7449; --ok-soft:#dff3ea; --warn:#9a5d00; --warn-soft:#fbefd9;
+  --bad:#b8243a; --bad-soft:#fbe3e7;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, "SF Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){ :root{
+  --bg:#101216; --surface:#181b21; --sunk:#0c0e11; --ink:#eceef2; --muted:#9aa1ad; --line:#2a2e37;
+  --accent:#ff6d3f; --accent-soft:#3a1d13; --ok:#45d195; --ok-soft:#123326; --warn:#f2b54e; --warn-soft:#3a2a10;
+  --bad:#ff7286; --bad-soft:#3b1820; color-scheme:dark }}
+*{box-sizing:border-box}
+html,body{margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 var(--sans)}
+.wrap{max-width:820px; margin:0 auto; padding:max(14px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) 60px max(14px, env(safe-area-inset-left))}
+header{display:grid; gap:10px; padding:8px 0 14px}
+.top{display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap}
+h1{font-size:1.5rem; margin:0; letter-spacing:-.01em}
+.saude{font:600 .78rem var(--mono); padding:5px 9px; border-radius:999px; background:var(--sunk); color:var(--muted)}
+.saude.ok{background:var(--ok-soft); color:var(--ok)} .saude.warn{background:var(--warn-soft); color:var(--warn)} .saude.bad{background:var(--bad-soft); color:var(--bad)}
+.barra{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+.abas{display:grid; grid-template-columns:repeat(4,auto); gap:4px; background:var(--sunk); padding:4px; border-radius:10px; flex:1 1 320px}
+.abas button{border:0; background:transparent; color:var(--muted); font:600 .85rem var(--sans); padding:7px 6px; border-radius:7px; cursor:pointer; white-space:nowrap}
+.abas button[aria-pressed="true"]{background:var(--surface); color:var(--ink); box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.abas .n{font-family:var(--mono); font-weight:400; opacity:.7; margin-left:3px}
+input[type=search]{flex:1 1 180px; min-width:0; font:inherit; color:var(--ink); background:var(--surface); border:1px solid var(--line); border-radius:9px; padding:8px 11px}
+label.chk{display:flex; gap:6px; align-items:center; font-size:.85rem; color:var(--muted); cursor:pointer}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.lista{display:grid; gap:10px}
+.vaga{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:14px; display:grid; gap:8px; min-width:0}
+.vaga.golpe{border-color:var(--bad)}
+.vaga.feito{opacity:.62}
+.meta{display:flex; gap:8px; flex-wrap:wrap; align-items:center; font-size:.8rem; color:var(--muted)}
+.meta .sub{font-family:var(--mono)}
+.novo{font:700 .68rem var(--mono); color:var(--accent); background:var(--accent-soft); padding:2px 6px; border-radius:4px; letter-spacing:.04em}
+.vaga h2{font-size:1.02rem; margin:0; line-height:1.35; overflow-wrap:anywhere}
+.vaga h2 a{color:inherit; text-decoration:none} .vaga h2 a:hover{color:var(--accent)}
+.alerta{font-size:.84rem; background:var(--bad-soft); color:var(--bad); padding:6px 9px; border-radius:7px}
+.tags{display:flex; gap:5px; flex-wrap:wrap}
+.tag{font:500 .74rem var(--mono); padding:3px 7px; border-radius:5px; background:var(--sunk); color:var(--muted)}
+.tag.din{background:var(--ok-soft); color:var(--ok); font-weight:600}
+.texto{font-size:.9rem; color:var(--muted); overflow-wrap:anywhere}
+.texto.curto{display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; cursor:pointer}
+.acoes{display:flex; gap:6px; flex-wrap:wrap}
+.acoes a,.acoes button{font:600 .82rem var(--sans); border:1px solid var(--line); background:var(--bg); color:var(--ink); border-radius:8px; padding:7px 11px; cursor:pointer; text-decoration:none}
+.acoes .pri{background:var(--ink); color:var(--bg); border-color:var(--ink)}
+.acoes button.on{border-color:var(--ok); color:var(--ok)}
+.vazio{text-align:center; color:var(--muted); padding:40px 10px; border:1px dashed var(--line); border-radius:12px}
+footer{margin-top:24px; font-size:.8rem; color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="top"><h1>Radar de Freela</h1><span class="saude" id="saude">carregando…</span></div>
+    <div class="barra">
+      <div class="abas" id="abas" role="group" aria-label="Filtro">
+        <button data-f="novas" aria-pressed="true">Novas<span class="n" id="n-novas"></span></button>
+        <button data-f="respondi" aria-pressed="false">Respondi<span class="n" id="n-respondi"></span></button>
+        <button data-f="descartei" aria-pressed="false">Descarte<span class="n" id="n-descartei"></span></button>
+        <button data-f="todas" aria-pressed="false">Todas<span class="n" id="n-todas"></span></button>
+      </div>
+      <input type="search" id="busca" placeholder="Buscar: python, c#, sheets…" aria-label="Buscar">
+      <label class="chk"><input type="checkbox" id="semGolpe" checked> Esconder suspeitas</label>
+    </div>
+  </header>
+  <main class="lista" id="lista"></main>
+  <footer>Atualiza sozinho a cada 2 minutos. O que você marca como respondida ou descartada fica salvo só neste aparelho.</footer>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const store = {
+  get(){ try { return JSON.parse(localStorage.getItem('radar-status')) || {}; } catch(e){ return {}; } },
+  set(v){ try { localStorage.setItem('radar-status', JSON.stringify(v)); } catch(e){} },
+  vistoGet(){ try { return localStorage.getItem('radar-visto') || ''; } catch(e){ return ''; } },
+  vistoSet(v){ try { localStorage.setItem('radar-visto', v); } catch(e){} }
+};
+let dados = {vagas:[]}, status = store.get(), filtro = 'novas';
+const vistoAntes = store.vistoGet();
+
+function ha(iso){
+  if(!iso) return '—';
+  const m = Math.round((Date.now() - new Date(iso)) / 60000);
+  if(m < 1) return 'agora'; if(m < 60) return `há ${m} min`;
+  const h = Math.round(m/60); if(h < 48) return `há ${h} h`;
+  return `há ${Math.round(h/24)} dias`;
+}
+function saude(){
+  const el = $('saude');
+  if(!dados.atualizado){ el.className='saude warn'; el.textContent='radar ainda não rodou'; return; }
+  const m = (Date.now() - new Date(dados.atualizado)) / 60000;
+  el.className = 'saude ' + (m < 90 ? 'ok' : m < 240 ? 'warn' : 'bad');
+  el.textContent = (m < 90 ? '● radar ligado · ' : m < 240 ? '● atrasado · ' : '● parado · ') + ha(dados.atualizado);
+}
+function prompt(v){
+  return `Triagem desta vaga do Reddit (r/${v.sub}):\n\nTítulo: ${v.titulo}\nLink: ${v.link}\n\n${v.texto}\n\nMe diga: horas estimadas, preço fechado sugerido, riscos/sinais de golpe, 2 perguntas para o cliente e a DM em inglês pronta para eu revisar.`;
+}
+function desenhar(){
+  const q = $('busca').value.trim().toLowerCase();
+  const semGolpe = $('semGolpe').checked;
+  const cont = {novas:0, respondi:0, descartei:0, todas:0};
+  const visiveis = [];
+  for(const v of dados.vagas){
+    if(semGolpe && v.golpe?.length) continue;
+    if(q && !(`${v.titulo} ${v.texto} ${(v.palavras||[]).join(' ')}`.toLowerCase().includes(q))) continue;
+    const st = status[v.id] || 'novas';
+    cont[st]++; cont.todas++;
+    if(filtro === 'todas' || filtro === st) visiveis.push(v);
+  }
+  for(const k in cont) $('n-'+k).textContent = cont[k];
+  if(!visiveis.length){
+    $('lista').innerHTML = `<div class="vazio">${dados.vagas.length ? 'Nada aqui com esse filtro.' : 'Nenhuma vaga ainda. Quando o radar no seu PC achar uma, ela aparece aqui e no WhatsApp.'}</div>`;
+    return;
+  }
+  $('lista').innerHTML = visiveis.map(v => {
+    const st = status[v.id] || 'novas';
+    const novo = vistoAntes && v.encontrado > vistoAntes;
+    return `<article class="vaga ${v.golpe?.length ? 'golpe' : ''} ${st !== 'novas' ? 'feito' : ''}" data-id="${esc(v.id)}">
+      <div class="meta">${novo ? '<span class="novo">NOVA</span>' : ''}<span class="sub">r/${esc(v.sub)}</span><span>${esc(ha(v.publicado || v.encontrado))}</span><span>${esc(v.autor)}</span></div>
+      <h2><a href="${esc(v.link)}" target="_blank" rel="noopener">${esc(v.titulo)}</a></h2>
+      ${v.golpe?.length ? `<div class="alerta">⚠️ Sinais de golpe: ${esc(v.golpe.join(', '))}</div>` : ''}
+      <div class="tags">${(v.valores||[]).map(x => `<span class="tag din">${esc(x)}</span>`).join('')}${(v.palavras||[]).slice(0,6).map(x => `<span class="tag">${esc(x)}</span>`).join('')}</div>
+      ${v.texto ? `<div class="texto curto" title="Toque para expandir">${esc(v.texto)}</div>` : ''}
+      <div class="acoes">
+        <a class="pri" href="${esc(v.link)}" target="_blank" rel="noopener">Abrir no Reddit</a>
+        <button data-a="copiar">Copiar para triagem</button>
+        <button data-a="respondi" class="${st==='respondi'?'on':''}">Respondi</button>
+        <button data-a="descartei" class="${st==='descartei'?'on':''}">Descartar</button>
+      </div></article>`;
+  }).join('');
+}
+$('lista').addEventListener('click', e => {
+  const card = e.target.closest('.vaga'); if(!card) return;
+  if(e.target.classList.contains('texto')){ e.target.classList.toggle('curto'); return; }
+  const a = e.target.dataset.a; if(!a) return;
+  const id = card.dataset.id, v = dados.vagas.find(x => x.id === id);
+  if(a === 'copiar'){
+    const btn = e.target, t = prompt(v);
+    const ok = () => { btn.textContent = 'Copiado'; setTimeout(() => btn.textContent = 'Copiar para triagem', 1500); };
+    try { navigator.clipboard.writeText(t).then(ok, () => window.prompt('Copie:', t)); } catch(err){ window.prompt('Copie:', t); }
+    return;
+  }
+  status[id] = status[id] === a ? 'novas' : a;
+  store.set(status); desenhar();
+});
+$('abas').addEventListener('click', e => {
+  const b = e.target.closest('button'); if(!b) return;
+  filtro = b.dataset.f;
+  document.querySelectorAll('#abas button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+  desenhar();
+});
+$('busca').addEventListener('input', desenhar);
+$('semGolpe').addEventListener('change', desenhar);
+
+async function carregar(){
+  try {
+    const r = await fetch('vagas.json?t=' + Date.now(), {cache:'no-store'});
+    dados = await r.json();
+  } catch(e){ $('saude').className='saude bad'; $('saude').textContent='não consegui ler vagas.json'; return; }
+  saude(); desenhar();
+}
+carregar();
+setInterval(carregar, 120000);
+setInterval(saude, 30000);
+addEventListener('pagehide', () => store.vistoSet(new Date().toISOString()));
+</script>
+</body>
+</html>

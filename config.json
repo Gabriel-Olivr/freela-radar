@@ -1,0 +1,24 @@
+{
+  "subreddits": ["forhire", "hireaprogrammer", "jobbit", "freelance_forhire", "DoneDirtCheap", "slavelabour"],
+  "palavras": [
+    "python", "pandas", "polars", "scrape", "scraper", "scraping", "crawler", "selenium", "playwright",
+    "etl", "pipeline", "data engineer", "data cleaning", "clean data", "csv",
+    "excel", "google sheets", "spreadsheet", "vba", "automation", "automate", "automated",
+    "sql", "postgres", "sqlite", "sql server", "database", "power bi",
+    "dashboard", "streamlit", "api", "c#", ".net", "dotnet", "asp.net",
+    "blazor", "winforms", "wpf", "entity framework", "telegram bot", "bot"
+  ],
+  "excluir": ["unpaid", "equity only", "rev share", "revenue share", "commission only", "onlyfans", "tiktok poster"],
+  "sinais_golpe": [
+    "telegram me", "whatsapp", "on signal", "discord me", "text me", "dm on tg",
+    "crypto", "usdt", "wallet", "upwork account", "rent your account",
+    "verification code", "send you a check", "cashier", "money order",
+    "run this", "clone the repo", "download the project", "test task",
+    "per post", "$/post", "easy money", "no experience"
+  ],
+  "intervalo_seg": 180,
+  "max_whatsapp_por_ciclo": 4,
+  "avisar_golpe_no_whatsapp": false,
+  "guardar_ultimas": 300,
+  "heartbeat_min": 60
+}
