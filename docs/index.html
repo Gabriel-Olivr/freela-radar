@@ -133,6 +133,7 @@ function desenhar(){
       ${v.texto ? `<div class="texto curto" title="Toque para expandir">${esc(v.texto)}</div>` : ''}
       <div class="acoes">
         <a class="pri" href="${esc(v.link)}" target="_blank" rel="noopener">Abrir no Reddit</a>
+        <button data-a="traduzir">Traduzir</button>
         <button data-a="copiar">Copiar para triagem</button>
         <button data-a="respondi" class="${st==='respondi'?'on':''}">Respondi</button>
         <button data-a="descartei" class="${st==='descartei'?'on':''}">Descartar</button>
@@ -144,6 +145,11 @@ $('lista').addEventListener('click', e => {
   if(e.target.classList.contains('texto')){ e.target.classList.toggle('curto'); return; }
   const a = e.target.dataset.a; if(!a) return;
   const id = card.dataset.id, v = dados.vagas.find(x => x.id === id);
+  if(a === 'traduzir'){
+    const t = `${v.titulo}\n\n${v.texto || ''}`;
+    window.open('https://translate.google.com/?sl=auto&tl=pt&op=translate&text=' + encodeURIComponent(t), '_blank', 'noopener');
+    return;
+  }
   if(a === 'copiar'){
     const btn = e.target, t = prompt(v);
     const ok = () => { btn.textContent = 'Copiado'; setTimeout(() => btn.textContent = 'Copiar para triagem', 1500); };
