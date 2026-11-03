@@ -1,6 +1,272 @@
 {
- "atualizado": "2026-11-03T23:22:08+00:00",
+ "atualizado": "2026-11-03T23:30:33+00:00",
  "vagas": [
+  {
+   "id": "t3_1xkz1y3",
+   "titulo": "[hiring] Senior level Software developer with proficient English",
+   "link": "https://www.reddit.com/r/hiring/comments/1xkz1y3/hiring_senior_level_software_developer_with/",
+   "sub": "hiring",
+   "autor": "/u/Wanderingindepth",
+   "publicado": "2026-11-01T09:44:57+00:00",
+   "texto": "What I'm building: A small, vetted team of strong engineers who pursue multiple remote roles together rather than alone. I'm not looking for a crowd — I'm looking for 3–5 people I can trust and invest in for the long term. The model, plainly: My team handles the pipeline — sourcing roles, tailoring applications, scheduling interviews. You never spend evenings filling out forms. You show up for interviews. That's your core job. You're the face and the technical voice. We prep you thoroughly beforehand and support you live during the session. After the offer, the load is shared. My tech assistants cover standups, tickets, reviews, and routine deliverables, so the operational weight of multiple roles stays manageable. You stay accountable for quality and outcomes — you're not a ghost, you're the lead. The result: meaningful additional income without the burnout that usually comes with juggling roles solo. Why this works better than going it alone: a single engineer applying alone gets maybe a handful of interviews a month. A coordinated team with a real pipeline gets consistent offers — and consistent offers are what create negotiating leverage and income stability. What I need from you: Strong communication and a professional presence in interviews — this is the one thing we can't build for you. Discretion and reliability. This is a long-term, trust-based collaboration, not a one-off gig. Genuine interest in the model as described What you get: A steady pipeline of vetted remot",
+   "palavras": [
+    "pipeline"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-03T23:30:03+00:00"
+  },
+  {
+   "id": "t3_1xd0zw8",
+   "titulo": "[USA][Hiring] Code a custom crossword puzzle with unusual properties.",
+   "link": "https://www.reddit.com/r/hireaprogrammer/comments/1xd0zw8/usahiring_code_a_custom_crossword_puzzle_with/",
+   "sub": "hireaprogrammer",
+   "autor": "/u/Western_Attempt_2387",
+   "publicado": "2026-10-23T01:40:28+00:00",
+   "texto": "Hello! I’m looking for someone to help code a custom crossword puzzle with a few unusual properties. The unusual properties are that certain clues and certain parts of the grid only appear after the solver has filled in parts of the puzzle. The puzzle also has a “rebus” element, which means that the solver needs to enter multiple letters in certain squares. The puzzle would need to be hosted on a website or in a downloadable format that is widely available. The website Crosshare provides a template for this. You do not need to design the actual crossword — this is already done. I would share a mock-up in Microsoft Excel. I posted a similar request earlier in the year. I am revamping the project after some initial delays. submitted by /u/Western_Attempt_2387 [link] [comments]",
+   "palavras": [
+    "excel"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-03T23:24:23+00:00"
+  },
+  {
+   "id": "t3_1qtzyvt",
+   "titulo": "[USA] Hiring for: Create print driver for efax service using existing API.",
+   "link": "https://www.reddit.com/r/hireaprogrammer/comments/1qtzyvt/usa_hiring_for_create_print_driver_for_efax/",
+   "sub": "hireaprogrammer",
+   "autor": "/u/Adam7288",
+   "publicado": "2026-02-02T16:36:08+00:00",
+   "texto": "If you have experience developing custom print drivers for windows, (mac and linux could be follow up projects) and can integrate the HumbleFax API we'd be interested in hiring you. We'd ideally like the user to only have to enter their API credentials or username / password into a popup dialog to make it all work. The person selects this \"printer\" when printing and it asks what fax number to send to. Extra points for status updates such as what page \"printed\" (faxed) so far and success / failure, but that may not gel well with standard printer driver conventions. Best to keep it simple. Anyway, let me know if you have interest and experience. submitted by /u/Adam7288 [link] [comments]",
+   "palavras": [
+    "api"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-03T23:24:23+00:00"
+  },
+  {
+   "id": "t3_1qd2dnx",
+   "titulo": "[USA][Hiring] Custom crossword puzzle with unusual properties.",
+   "link": "https://www.reddit.com/r/hireaprogrammer/comments/1qd2dnx/usahiring_custom_crossword_puzzle_with_unusual/",
+   "sub": "hireaprogrammer",
+   "autor": "/u/Western_Attempt_2387",
+   "publicado": "2026-01-14T23:00:26+00:00",
+   "texto": "Hello! I’m looking for someone to help code a custom crossword puzzle with a few unusual properties. The unusual properties are that certain clues and certain parts of the grid only appear after the solver has filled in parts of the puzzle. The puzzle also has a “rebus” element, which means that the solver needs to enter multiple letters in certain squares. The puzzle would need to be hosted on a website or in a downloadable format that is widely available. You do not need to design the actual crossword — this is already done. I would share a mock-up in Microsoft Excel. submitted by /u/Western_Attempt_2387 [link] [comments]",
+   "palavras": [
+    "excel"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-03T23:24:23+00:00"
+  },
+  {
+   "id": "t3_1p14znj",
+   "titulo": "[USA][Hiring] Full stack dev for a custom white label style platform build.",
+   "link": "https://www.reddit.com/r/hireaprogrammer/comments/1p14znj/usahiring_full_stack_dev_for_a_custom_white_label/",
+   "sub": "hireaprogrammer",
+   "autor": "/u/mjwb99",
+   "publicado": "2025-11-19T11:17:41+00:00",
+   "texto": "Hi, I am looking for a US based developer or small dev team to help build a modern white label style platform for my business. The platform needs to pull items from a CMS and display them in a clean, controlled way. It will need user logins, a simple dashboard, an API for external platforms to fetch data, and the ability for me to choose exactly which items appear for different users or groups. The build should use whatever is considered the most robust and scalable approach today, rather than outdated stacks. Key requirements: • Login and user dashboard • Ability to show different sets of items to different users • CMS integration • API endpoint for external systems to request data • Clean, fast front end and reliable back end • White label friendly structure I am open to recommendations on the best tech stack. I mainly want the build to be stable, scalable and easy to manage long term. If interested please send: • A brief intro • Relevant examples or portfolio links • Your typical rates • Estimated availability Thanks in advance submitted by /u/mjwb99 [link] [comments]",
+   "palavras": [
+    "dashboard",
+    "api"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-03T23:24:23+00:00"
+  },
+  {
+   "id": "t3_1hsay30",
+   "titulo": "[USA][Hiring] API Integration Help with Notion and Google Calendar.",
+   "link": "https://www.reddit.com/r/hireaprogrammer/comments/1hsay30/usahiring_api_integration_help_with_notion_and/",
+   "sub": "hireaprogrammer",
+   "autor": "/u/Jahkle",
+   "publicado": "2025-01-03T01:48:11+00:00",
+   "texto": "Hello all! I'm working on a script that will integrate a custom GPT with Notion and Google Calendar. I have a lot of the code written, I honestly just need some help getting over the final hurdle as I am a bit of a novice! The task manager I use is a bit more complicated than a simple list and my custom GPT needs to be able to have a bit more going on with the action side. Let me know if you can hop on a call to help me finalize that last couple pieces. Basically I want the GPT to add tasks I tell it and then schedule it throughout the week. Let's discuss! All the Best submitted by /u/Jahkle [link] [comments]",
+   "palavras": [
+    "api"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-03T23:24:23+00:00"
+  },
+  {
+   "id": "t3_1g170iz",
+   "titulo": "[USA][hiring] a full stack python and next js developer for our Saas long term.",
+   "link": "https://www.reddit.com/r/hireaprogrammer/comments/1g170iz/usahiring_a_full_stack_python_and_next_js/",
+   "sub": "hireaprogrammer",
+   "autor": "/u/noamico666",
+   "publicado": "2024-10-11T10:54:20+00:00",
+   "texto": "Hello developers 💪 We are looking for a superstar full-stack web developer that is highly proficient working on production-level SaaS applications. Capable of handling the entire development pipeline—from database design and backend development to frontend implementation and deployment. Self-motivated, fast learner, and comfortable working independently. We need someone who moves fast!! We're looking for someone who's seeking a long-term position - we don't want someone who will leave after 1 or 2 months! So if you are a superstar and a great fit - we guarantee long-term job security :) Technical Skills: -Lots of Python , Flask, Concurrency, working with data, sockets, live data. you can build backend API's and integrations. -JWT/authentication/Stripe payments integrations/ Email integrations -React/Next JS for frontend, You can build UI's on a high level and posses design skills. -Expert in Postgress for db, AWS services-Can do deployments, Docker, CI/CD. Personal Skills: Great english, both written and spoken. Independent - you will need to learn many things on your own, use new tools and technologies. Communication - this is the number 1 priority for us. looking for someone who communicates fast, reply back fast, is active and can join a meeting whenever needed Ships code FAST! if you would like to apply - pls fill out this Google form: forms[.]gle/aa9ZWQpXfTbXXWdJ8 P.S > If you haven't worked with python + flask + next js + postgress in the past -- there is no point to ap",
+   "palavras": [
+    "python",
+    "pipeline",
+    "database",
+    "api"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-03T23:24:23+00:00"
+  },
+  {
+   "id": "t3_1f9zdhf",
+   "titulo": "[USA][Hiring] iOS App Developer for SwiftUI-based Wellness App.",
+   "link": "https://www.reddit.com/r/hireaprogrammer/comments/1f9zdhf/usahiring_ios_app_developer_for_swiftuibased/",
+   "sub": "hireaprogrammer",
+   "autor": "/u/thatonegirlyana",
+   "publicado": "2024-09-05T22:26:30+00:00",
+   "texto": "Hello, I’m currently seeking an iOS app developer to help me complete a project I’ve been working on for the past few months. While I’ve managed to build a lot of the front end myself using SwiftUI, my experience is limited, and I’m starting to realize that I need more hands-on expertise to bring this project to life. Project Overview: I’ve made considerable progress on the front end—about 75% is done—but it probably requires refinement and it would be great if you could review and improve what’s there when necessary. The back end needs significantly more work (like a lot, a lot). I’ve been using Swift Beta 6, Xcode Beta, and Firebase. The app and its design are copyrighted, so I’m looking for someone trustworthy to help me finish it up. Tech Stack: • SwiftUI (Beta 6) • Xcode Beta • Firebase for the back end Ongoing Needs: I’m balancing this work with parenting, so I can’t dedicate as much time as I’d like to this project. That’s why I need someone who can help complete the coding side, assist with deployment, and potentially support an Android version in the future (although this is not required by any means). This could potentially lead to ongoing collaboration, as I have several other app ideas in the pipeline. Compensation: I don’t have a huge budget for this first app, but I’m offering fair compensation based on your experience. If this project goes well, future apps will have more resources to offer better pay (obviously). If you’re interested, please get in touch and w",
+   "palavras": [
+    "pipeline"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-03T23:24:23+00:00"
+  },
+  {
+   "id": "t3_1c8cckb",
+   "titulo": "[USA][Hiring] WebApp Dev for Simple WebApp using Plaid API.",
+   "link": "https://www.reddit.com/r/hireaprogrammer/comments/1c8cckb/usahiring_webapp_dev_for_simple_webapp_using/",
+   "sub": "hireaprogrammer",
+   "autor": "/u/tinyJman",
+   "publicado": "2024-04-20T00:18:11+00:00",
+   "texto": "My company is looking for someone that can develop a tool to help us with our payment agreements with our clients. We want to automatically withdraw a specified payment amount based on when the client receives money deposited into their account from a specified source. It needs to be able to detect the deposit and then initiate a transfer of X% to our bank account per our agreement. We have an example site of an application that does this for reference that we can provide for you! From what we can tell this should all be able to be done via the Plaid API If this seems like something you can do please reach out and we can discuss pricing, as well as timeframes. Thanks! submitted by /u/tinyJman [link] [comments]",
+   "palavras": [
+    "api"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-03T23:24:23+00:00"
+  },
+  {
+   "id": "t3_1bfb59r",
+   "titulo": "[USA][Hiring] Seeking multiple engineers.",
+   "link": "https://www.reddit.com/r/hireaprogrammer/comments/1bfb59r/usahiring_seeking_multiple_engineers/",
+   "sub": "hireaprogrammer",
+   "autor": "/u/houseunderpool",
+   "publicado": "2024-03-15T10:52:00+00:00",
+   "texto": "Below are the skill sets that will be applicable to the project in its early stages. A candidate that has experience in all of these would be rare, but someone who has two or more skills from this list across multiple categories would be ideal for integrating quickly and learning the rest. Experience with specific tools listed in parentheses would be a bonus. Frontend: - TypeScript (React, React Native, expo) Backend infrastructure: - Cloud services (AWS) - Linux - SQL (Postgres) Infrastructure management: - Terraform - Kubernetes (Helm) - Continuous Integration / Continuous Delivery (Github Actions) Smart contracts: - Rust - Solana blockchain **Payment in crypto * * submitted by /u/houseunderpool [link] [comments]",
+   "palavras": [
+    "sql",
+    "postgres"
+   ],
+   "golpe": [
+    "crypto"
+   ],
+   "valores": [],
+   "encontrado": "2026-11-03T23:24:23+00:00"
+  },
+  {
+   "id": "t3_15h3evn",
+   "titulo": "[United States]Hiring a programmer to help automate my workflow.",
+   "link": "https://www.reddit.com/r/hireaprogrammer/comments/15h3evn/united_stateshiring_a_programmer_to_help_automate/",
+   "sub": "hireaprogrammer",
+   "autor": "",
+   "publicado": "2023-08-03T12:51:38+00:00",
+   "texto": "I'm doing some work on a study guide website. I spend a lot of time clicking on links to see if the assignment is available. I'd like to hire someone to build a program that will pull up all the pages containing the phrase \"this section hasn't been written yet.\" That way I don't have to manually click to find out. I'm not too tech savvy so you'd also have to give me explicit instructions on how to run the program. I have an android phone and a surface pro. When replying, please give me your rate for the project and the expected turnaround. Thank you! [link] [comments]",
+   "palavras": [
+    "automate"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-03T23:24:23+00:00"
+  },
+  {
+   "id": "t3_12tmjws",
+   "titulo": "[United States] Interested in Hiring to create a web survey for difficulty balancing.",
+   "link": "https://www.reddit.com/r/hireaprogrammer/comments/12tmjws/united_states_interested_in_hiring_to_create_a/",
+   "sub": "hireaprogrammer",
+   "autor": "/u/dimonium_anonimo",
+   "publicado": "2023-04-21T01:48:43+00:00",
+   "texto": "I'm working on a fun quiz game/flash cards involving identifying states based on unique strings in their names. For instance, no other state besides New Jersey has \"RS\" in the name anywhere. I have already made a list of 474 clues which are all possible 4-character or less unique strings in the 50 states (I have ignored spaces and capital letters, so \"WM\" is unique to New Mexico). What I would like to do is sort the cards into 4 difficulty groups that are fairly balanced, but besides the difficulty of grading 474 clues consistently, I also feel like I'd be very biased having already gone through the list to create them. ​ Ideally, I'd like some sort of web form that I could link in a few subreddits that would take participants to a site that offers them up a random code from the list, they have to guess what state corresponds, and their guess of the difficulty of the clue from 1-4. The site will continue to feed them new clues until they have seen all of them or they get bored. Then, I/we/you/whatever let it run for a while until there is enough data to take an average (maybe a minimum of 8-10 submissions per clue). You don't have to do any filtering or rounding or anything with those averages, just send me the raw data and I'll sort it out. (csv, or xlsx would be ideal). ​ Since I have no means (or idea how) to host this, I would need someone who'd be willing to do that as well, or if there are services out there built for something like this. I wouldn't expect you to run it",
+   "palavras": [
+    "csv"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-03T23:24:23+00:00"
+  },
+  {
+   "id": "t3_126s2ou",
+   "titulo": "[United States] Hiring a programmer to help with an old console game fan project.",
+   "link": "https://www.reddit.com/r/hireaprogrammer/comments/126s2ou/united_states_hiring_a_programmer_to_help_with_an/",
+   "sub": "hireaprogrammer",
+   "autor": "/u/riahbar",
+   "publicado": "2023-03-30T16:31:41+00:00",
+   "texto": "I am a part of a small community of people who, though enthusiasm and the volunteered time of a couple knowledgeable people, have been developing a mod version of SoulCalibur 2, SC2Plus. Good progress has been made over the last couple years through tinkering and reverse engineering things, but we have been at a roadblock for a while lately. Most of us have no idea what we're doing, and the one or two people who do can't volunteer their labor all the time, and are too busy with their own lives and careers to do it on a paid basis. In order for our mod development to proceed further, we need to hire someone with the necessary skills to develop a tool for us so we can break though the barriers we're currently facing. We currently have scraped and pooled as much money as we can from our community and are currently able to pay a little over 1k to anyone who can help us. We need someone who is knowledgeable in Python, 3d model filestructures, and Noesis. What we're looking for specifically is a plugin/set of plugins for Noesis that will allow us to import, edit, and export to 3 separate proprietary model formats for the Xbox, Gamecube and PS2 versions of SoulCalibur 2, including bones and mesh data. We have been able to compile a bit of documentation on the different file structures, and are able to open and modify at least one already, but the tool that was developed was only ever made for the Xbox and IIRC the guy who made it doesn't even remember anything about it anymore. We'r",
+   "palavras": [
+    "python"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-03T23:24:23+00:00"
+  },
+  {
+   "id": "t3_11uiij7",
+   "titulo": "[Germany] Hiring someone familiar with Python for microcontroller programming.",
+   "link": "https://www.reddit.com/r/hireaprogrammer/comments/11uiij7/germany_hiring_someone_familiar_with_python_for/",
+   "sub": "hireaprogrammer",
+   "autor": "/u/Raymare1988",
+   "publicado": "2023-03-18T08:34:25+00:00",
+   "texto": "I have a small project that I'm working on and can't wrap my head around the adafruit itsy bitsy m0 express pinout. I'm looking for a basic script that, when a momentary switch is pushed, 1 led will illuminate, 3 leds will fully illuminate then sequentially dim and then extinguish and an audio clip will play during the 10 second sequence. When the momentary switch is pushed a second time during the sequence, it cancels the sequence. After the 10-second sequence is complete, the project turns off until it starts again by pushing the momentary switch. Please message me if interested, and we can discuss payment and details. Edit: Position is filled. submitted by /u/Raymare1988 [link] [comments]",
+   "palavras": [
+    "python"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-03T23:24:23+00:00"
+  },
+  {
+   "id": "t3_11nearq",
+   "titulo": "[United States].[Hiring] Hiring a programmer to help build a script to help manage my fantasy baseball team.",
+   "link": "https://www.reddit.com/r/hireaprogrammer/comments/11nearq/united_stateshiring_hiring_a_programmer_to_help/",
+   "sub": "hireaprogrammer",
+   "autor": "/u/monkeymobsters",
+   "publicado": "2023-03-10T04:11:55+00:00",
+   "texto": "Good Evening, What I'm asking for is most likely easy but it would be a pain for me to learn and I'm so I'm looking for help to hire. I'd like a script that I could run that would scrape the rosters of my fantasy baseball league and organize neatly it all neatly in a spreadsheet. Currently, I have to copy and paste, rearrange items and do like 20 minutes of organizing just to get the data useful. It's annoying. I need the data so that I can Vlookup and compare it to a popular dynasty fantasy baseball ranking author i read so I can easily identify when guys have been dropped. Let me know if this is up your alley or I need to post to a different group. thanks. submitted by /u/monkeymobsters [link] [comments]",
+   "palavras": [
+    "scrape",
+    "spreadsheet"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-03T23:24:23+00:00"
+  },
+  {
+   "id": "t3_idwpop",
+   "titulo": "[HIRING] Coder for Discord Account Creator Bot - any language",
+   "link": "https://www.reddit.com/r/hireaprogrammer/comments/idwpop/hiring_coder_for_discord_account_creator_bot_any/",
+   "sub": "hireaprogrammer",
+   "autor": "",
+   "publicado": "2020-08-21T13:28:07+00:00",
+   "texto": "Hello, ​ looking for a coder to code a discord account creator bot. we provide proxies as well as captcha solving capabilities.functions include: creating discord account connecting youtube account to discord account joining server (part of perks from youtube account) deleting welcome message (message that says \"xy joined\") from that server budget around 150$. PM [link] [comments]",
+   "palavras": [
+    "bot"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-03T23:24:23+00:00"
+  },
+  {
+   "id": "t3_du2mdc",
+   "titulo": "[HIRING] WebDeveloper for Mass-Producing Route-Planning/Directions/Map based Websites",
+   "link": "https://www.reddit.com/r/hireaprogrammer/comments/du2mdc/hiring_webdeveloper_for_massproducing/",
+   "sub": "hireaprogrammer",
+   "autor": "",
+   "publicado": "2019-11-09T22:13:26+00:00",
+   "texto": "Hello Dear Reddit Webdeveloper! We are the company Midwest Venture Group and we are looking for web developers to extend our pool of Route-Planning/Directions/Map based websites. A few examples: https://www.mapslive.net/ https://www.mapsonline.us/ http://www.directionswiz.com/ https://www.metrotransit.co/ What's important: You are able to come up with new twists & turns to the website design. It is important that the website appears to be a new, independent website to the google AI - or else our business model falls flat. Which is simple: have more market share by diluting the offering of map websites. Each unique website design we pay $100 for. Depending on your skill & dedication, that's a hefty $50 per hour. Most of our contributors manage to finish a website in about 3 hours tops! Thats including the newly written texts. If we have sparked your interest, please drop us a private message with a short reasoning why you would be the right hire and your contact details. Good luck! [link] [comments]",
+   "palavras": [
+    ".net"
+   ],
+   "golpe": [],
+   "valores": [
+    "$100",
+    "$50 per hour"
+   ],
+   "encontrado": "2026-11-03T23:24:23+00:00"
+  },
   {
    "id": "t3_1xl395d",
    "titulo": "[Hiring] Software License Troubleshooting",
