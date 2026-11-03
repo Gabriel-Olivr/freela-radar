@@ -157,6 +157,7 @@ $('lista').addEventListener('click', e => {
   const id = card.dataset.id, v = dados.vagas.find(x => x.id === id);
   if(a === 'traduzir'){
     if(verTrad.delete(id)){ desenhar(); return; }
+    if(!trad[id] && v.titulo_pt) trad[id] = {titulo: v.titulo_pt, texto: v.texto_pt};  // traduzida pelo radar no PC
     if(trad[id]){ verTrad.add(id); desenhar(); return; }
     const btn = e.target; btn.textContent = 'Traduzindo…'; btn.disabled = true;
     Promise.all([traduzir(v.titulo), traduzir(v.texto)])

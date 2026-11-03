@@ -119,6 +119,36 @@ def avaliar(post):
             "valores": list(dict.fromkeys(v.strip() for v in valores))[:4]}
 
 
+# --------------------------------------------------------------- tradução --
+def traduzir(texto):
+    """Traduz para português pelo endpoint gratuito do Google. None se falhar."""
+    if not texto:
+        return ""
+    q = urllib.parse.urlencode({"client": "gtx", "sl": "auto", "tl": "pt", "dt": "t", "q": texto})
+    try:
+        with urllib.request.urlopen(f"https://translate.googleapis.com/translate_a/single?{q}", timeout=20) as r:
+            return "".join(s[0] for s in json.loads(r.read())[0] if s[0])
+    except (urllib.error.URLError, TimeoutError, ValueError, IndexError, TypeError) as e:
+        log(f"falha ao traduzir: {e}")
+        return None
+
+
+def traduzir_pendentes(vagas, limite=10):
+    """Traduz as vagas que ainda não têm tradução; as que falharem ficam para o próximo ciclo."""
+    feitas = 0
+    for v in vagas:
+        if feitas >= limite:
+            break
+        if "titulo_pt" in v:
+            continue
+        titulo, texto = traduzir(v["titulo"]), traduzir(v["texto"])
+        if titulo is None or texto is None:
+            break
+        v["titulo_pt"], v["texto_pt"] = titulo, texto
+        feitas += 1
+    return feitas
+
+
 # ------------------------------------------------------------------ avisos --
 def whatsapp(texto):
     fone, chave = ENV("CALLMEBOT_PHONE"), ENV("CALLMEBOT_APIKEY")
@@ -216,6 +246,7 @@ def ciclo(a):
         dados["vagas"].append(vaga)
         novas.append(vaga)
 
+    traduzidas = traduzir_pendentes(dados["vagas"])
     avisaveis = [v for v in novas if CFG["avisar_golpe_no_whatsapp"] or not v["golpe"]]
     if primeira and not a.historico:
         log(f"primeira execução: {len(novas)} vagas guardadas no painel, sem aviso")
@@ -230,7 +261,7 @@ def ciclo(a):
 
     ultima = datetime.fromisoformat(dados["atualizado"]) if dados["atualizado"] else None
     batida_vencida = ultima is None or (datetime.now(timezone.utc) - ultima).total_seconds() > CFG["heartbeat_min"] * 60
-    if novas or batida_vencida:
+    if novas or traduzidas or batida_vencida:
         dados["atualizado"] = agora_iso()
         salvar_vagas(dados)
         if a.push:
