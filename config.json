@@ -1,5 +1,5 @@
 {
-  "subreddits": ["forhire", "hireaprogrammer", "jobbit", "DoneDirtCheap", "slavelabour", "Jobs4Bitcoins", "gameDevClassifieds", "WorkOnline", "hiring"],
+  "subreddits": ["forhire", "hireaprogrammer", "jobbit", "DoneDirtCheap", "slavelabour", "Jobs4Bitcoins", "WorkOnline", "hiring"],
   "palavras": [
     "python", "pandas", "polars", "scrape", "scraper", "scraping", "crawler", "selenium", "playwright",
     "etl", "pipeline", "data engineer", "data cleaning", "clean data", "csv",
