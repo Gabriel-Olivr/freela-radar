@@ -1,6 +1,40 @@
 {
- "atualizado": "2026-11-03T23:31:24+00:00",
+ "atualizado": "2026-11-08T12:03:34+00:00",
  "vagas": [
+  {
+   "id": "t3_1xqoczo",
+   "titulo": "[HIRING] Cybersecurity Devs",
+   "link": "https://www.reddit.com/r/forhire/comments/1xqoczo/hiring_cybersecurity_devs/",
+   "sub": "forhire",
+   "autor": "/u/seraphym1389",
+   "publicado": "2026-11-08T03:10:54+00:00",
+   "texto": "Wayne Citadel is searching for 2 (two) experienced, dedicated Security devs. what is all about: heres the story: Problem: Infrastructure changes submitted through GitHub pull requests can silently introduce security risks — widened IAM permissions, public exposure, destructive replacements — and reviewers rarely have time to read a full Terraform plan. Constraint: Explain only the change, never scan the whole state. The AI must never decide what a finding is or how severe it is; those decisions stay with deterministic logic. Nothing in the output may be invented. Decision: Separated detection from explanation. A deterministic analyzer produces findings as facts; a grounded language-model layer turns them into a readable impact explanation, validated against the input facts before anything is published to the pull request as a comment and as SARIF. A pull-request security review tool for Terraform and OpenTofu on AWS, running in GitHub Actions. Built around a local test harness, a fixture library of recorded plan changes, golden-file tests, a response cache and a model evaluation set. Project is in its early stage. still dont have budget tho, to be clear right away currently we are team of around 16 ppl i am Tech lead also AI automation part, so i need teammate who can cover me because ill be doing two tasks you dont have to be pro, just motivated, proactive and normal thinking guy, not some programing nerd :) Startup just started and ATM we are building infrastructure, and ha",
+   "palavras": [
+    "automation"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-08T12:03:21+00:00",
+   "titulo_pt": "[CONTRATAÇÃO] Desenvolvedores de segurança cibernética",
+   "texto_pt": "Wayne Citadel está procurando 2 (dois) desenvolvedores de segurança experientes e dedicados. do que se trata: aqui está a história: Problema: alterações na infraestrutura enviadas por meio de solicitações pull do GitHub podem introduzir silenciosamente riscos de segurança - permissões IAM ampliadas, exposição pública, substituições destrutivas - e os revisores raramente têm tempo para ler um plano completo do Terraform. Restrição: Explique apenas a mudança, nunca examine todo o estado. A IA nunca deve decidir o que é uma descoberta ou quão grave é; essas decisões permanecem com a lógica determinística. Nada na saída pode ser inventado. Decisão: Detecção separada da explicação. Um analisador determinístico produz descobertas como fatos; uma camada de modelo de linguagem fundamentada os transforma em uma explicação de impacto legível, validada em relação aos fatos de entrada antes que qualquer coisa seja publicada na solicitação pull como um comentário e como SARIF. Uma ferramenta de revisão de segurança de solicitação pull para Terraform e OpenTofu na AWS, em execução no GitHub Actions. Construído em torno de um equipamento de teste local, uma biblioteca de acessórios de alterações de plano registradas, testes de arquivo dourado, um cache de resposta e um conjunto de avaliação de modelo. Projeto está em fase inicial. ainda não tenho orçamento, para ser claro agora, atualmente somos uma equipe de cerca de 16 pessoas, sou líder técnico e também parte de automação de IA, então preciso de um colega de equipe que possa me cobrir porque estarei fazendo duas tarefas, você não precisa ser profissional, apenas um cara motivado, proativo e de pensamento normal, não algum nerd em programação :) A inicialização acabou de começar e o ATM estamos construindo infraestrutura, e ha"
+  },
+  {
+   "id": "t3_1xqd5hh",
+   "titulo": "[HIRING] Cybersecurity Devs",
+   "link": "https://www.reddit.com/r/hiring/comments/1xqd5hh/hiring_cybersecurity_devs/",
+   "sub": "hiring",
+   "autor": "/u/seraphym1389",
+   "publicado": "2026-11-07T18:23:00+00:00",
+   "texto": "Wayne Citadel is searching for 2 (two) experienced, dedicated Security devs. what is all about: heres the story: Problem: Infrastructure changes submitted through GitHub pull requests can silently introduce security risks — widened IAM permissions, public exposure, destructive replacements — and reviewers rarely have time to read a full Terraform plan. Constraint: Explain only the change, never scan the whole state. The AI must never decide what a finding is or how severe it is; those decisions stay with deterministic logic. Nothing in the output may be invented. Decision: Separated detection from explanation. A deterministic analyzer produces findings as facts; a grounded language-model layer turns them into a readable impact explanation, validated against the input facts before anything is published to the pull request as a comment and as SARIF. A pull-request security review tool for Terraform and OpenTofu on AWS, running in GitHub Actions. Built around a local test harness, a fixture library of recorded plan changes, golden-file tests, a response cache and a model evaluation set. Project is in its early stage. still dont have budget tho, to be clear right away currently we are team of around 16 ppl i am Tech lead also AI automation part, so i need teammate who can cover me because ill be doing two tasks you dont have to be pro, just motivated, proactive and normal thinking guy, not some programing nerd :) Startup just started and ATM we are building infrastructure, and ha",
+   "palavras": [
+    "automation"
+   ],
+   "golpe": [],
+   "valores": [],
+   "encontrado": "2026-11-08T12:03:21+00:00",
+   "titulo_pt": "[CONTRATAÇÃO] Desenvolvedores de segurança cibernética",
+   "texto_pt": "Wayne Citadel está procurando 2 (dois) desenvolvedores de segurança experientes e dedicados. do que se trata: aqui está a história: Problema: alterações na infraestrutura enviadas por meio de solicitações pull do GitHub podem introduzir silenciosamente riscos de segurança - permissões IAM ampliadas, exposição pública, substituições destrutivas - e os revisores raramente têm tempo para ler um plano completo do Terraform. Restrição: Explique apenas a mudança, nunca examine todo o estado. A IA nunca deve decidir o que é uma descoberta ou quão grave é; essas decisões permanecem com a lógica determinística. Nada na saída pode ser inventado. Decisão: Detecção separada da explicação. Um analisador determinístico produz descobertas como fatos; uma camada de modelo de linguagem fundamentada os transforma em uma explicação de impacto legível, validada em relação aos fatos de entrada antes que qualquer coisa seja publicada na solicitação pull como um comentário e como SARIF. Uma ferramenta de revisão de segurança de solicitação pull para Terraform e OpenTofu na AWS, em execução no GitHub Actions. Construído em torno de um equipamento de teste local, uma biblioteca de acessórios de alterações de plano registradas, testes de arquivo dourado, um cache de resposta e um conjunto de avaliação de modelo. Projeto está em fase inicial. ainda não tenho orçamento, para ser claro agora, atualmente somos uma equipe de cerca de 16 pessoas, sou líder técnico e também parte de automação de IA, então preciso de um colega de equipe que possa me cobrir porque estarei fazendo duas tarefas, você não precisa ser profissional, apenas um cara motivado, proativo e de pensamento normal, não algum nerd em programação :) A inicialização acabou de começar e o ATM estamos construindo infraestrutura, e ha"
+  },
   {
    "id": "t3_1xkz1y3",
    "titulo": "[hiring] Senior level Software developer with proficient English",
@@ -17,23 +51,6 @@
    "encontrado": "2026-11-03T23:30:03+00:00",
    "titulo_pt": "[contratação] Desenvolvedor de software de nível sênior com inglês proficiente",
    "texto_pt": "O que estou construindo: uma equipe pequena e avaliada de engenheiros fortes que exercem diversas funções remotas juntos, em vez de sozinhos. Não procuro uma multidão - procuro de 3 a 5 pessoas em quem possa confiar e em quem possa investir a longo prazo. O modelo, claramente: minha equipe cuida do pipeline – sourcing de funções, adaptação de aplicativos, agendamento de entrevistas. Você nunca passa noites preenchendo formulários. Você aparece para entrevistas. Esse é o seu trabalho principal. Você é o rosto e a voz técnica. Nós o preparamos cuidadosamente com antecedência e o apoiamos ao vivo durante a sessão. Após a oferta, a carga é compartilhada. Meus assistentes técnicos cobrem reuniões, tickets, avaliações e resultados de rotina, para que o peso operacional de múltiplas funções permaneça gerenciável. Você permanece responsável pela qualidade e pelos resultados – você não é um fantasma, você é o líder. O resultado: uma renda adicional significativa sem o esgotamento que geralmente acompanha o malabarismo com papéis solo. Por que isso funciona melhor do que fazer tudo sozinho: um único engenheiro que se inscreve sozinho consegue talvez algumas entrevistas por mês. Uma equipe coordenada com um pipeline real obtém ofertas consistentes – e ofertas consistentes são o que cria alavancagem de negociação e estabilidade de receita. O que preciso de você: Comunicação forte e presença profissional nas entrevistas - isso é o que não podemos construir para você. Discrição e confiabilidade. Esta é uma colaboração de longo prazo baseada na confiança, não um trabalho único. Interesse genuíno no modelo conforme descrito O que você obtém: Um pipeline constante de controle remoto controlado"
-  },
-  {
-   "id": "t3_1xd0zw8",
-   "titulo": "[USA][Hiring] Code a custom crossword puzzle with unusual properties.",
-   "link": "https://www.reddit.com/r/hireaprogrammer/comments/1xd0zw8/usahiring_code_a_custom_crossword_puzzle_with/",
-   "sub": "hireaprogrammer",
-   "autor": "/u/Western_Attempt_2387",
-   "publicado": "2026-10-23T01:40:28+00:00",
-   "texto": "Hello! I’m looking for someone to help code a custom crossword puzzle with a few unusual properties. The unusual properties are that certain clues and certain parts of the grid only appear after the solver has filled in parts of the puzzle. The puzzle also has a “rebus” element, which means that the solver needs to enter multiple letters in certain squares. The puzzle would need to be hosted on a website or in a downloadable format that is widely available. The website Crosshare provides a template for this. You do not need to design the actual crossword — this is already done. I would share a mock-up in Microsoft Excel. I posted a similar request earlier in the year. I am revamping the project after some initial delays. submitted by /u/Western_Attempt_2387 [link] [comments]",
-   "palavras": [
-    "excel"
-   ],
-   "golpe": [],
-   "valores": [],
-   "encontrado": "2026-11-03T23:24:23+00:00",
-   "titulo_pt": "[EUA][Hiring] Codifique palavras cruzadas personalizadas com propriedades incomuns.",
-   "texto_pt": "Olá! Estou procurando alguém para ajudar a codificar um jogo de palavras cruzadas personalizado com algumas propriedades incomuns. As propriedades incomuns são que certas pistas e certas partes da grade só aparecem depois que o solucionador preencheu partes do quebra-cabeça. O quebra-cabeça também possui um elemento “rebus”, o que significa que o solucionador precisa inserir várias letras em determinados quadrados. O quebra-cabeça precisaria ser hospedado em um site ou em um formato para download que estivesse amplamente disponível. O site Crossshare fornece um modelo para isso. Você não precisa criar as palavras cruzadas reais – isso já está feito. Eu compartilharia um modelo no Microsoft Excel. Publiquei um pedido semelhante no início do ano. Estou reformulando o projeto após alguns atrasos iniciais. enviado por /u/Western_Attempt_2387 [link] [comentários]"
   },
   {
    "id": "t3_1xl395d",
