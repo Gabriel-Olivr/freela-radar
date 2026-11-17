@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-12T01:30:45+00:00",
+ "atualizado": "2026-11-17T01:21:36+00:00",
  "vagas": [
   {
    "id": "t3_1xqoczo",
@@ -34,83 +34,6 @@
    "encontrado": "2026-11-08T12:03:21+00:00",
    "titulo_pt": "[CONTRATAÇÃO] Desenvolvedores de segurança cibernética",
    "texto_pt": "Wayne Citadel está procurando 2 (dois) desenvolvedores de segurança experientes e dedicados. do que se trata: aqui está a história: Problema: alterações na infraestrutura enviadas por meio de solicitações pull do GitHub podem introduzir silenciosamente riscos de segurança - permissões IAM ampliadas, exposição pública, substituições destrutivas - e os revisores raramente têm tempo para ler um plano completo do Terraform. Restrição: Explique apenas a mudança, nunca examine todo o estado. A IA nunca deve decidir o que é uma descoberta ou quão grave é; essas decisões permanecem com a lógica determinística. Nada na saída pode ser inventado. Decisão: Detecção separada da explicação. Um analisador determinístico produz descobertas como fatos; uma camada de modelo de linguagem fundamentada os transforma em uma explicação de impacto legível, validada em relação aos fatos de entrada antes que qualquer coisa seja publicada na solicitação pull como um comentário e como SARIF. Uma ferramenta de revisão de segurança de solicitação pull para Terraform e OpenTofu na AWS, em execução no GitHub Actions. Construído em torno de um equipamento de teste local, uma biblioteca de acessórios de alterações de plano registradas, testes de arquivo dourado, um cache de resposta e um conjunto de avaliação de modelo. Projeto está em fase inicial. ainda não tenho orçamento, para ser claro agora, atualmente somos uma equipe de cerca de 16 pessoas, sou líder técnico e também parte de automação de IA, então preciso de um colega de equipe que possa me cobrir porque estarei fazendo duas tarefas, você não precisa ser profissional, apenas um cara motivado, proativo e de pensamento normal, não algum nerd em programação :) A inicialização acabou de começar e o ATM estamos construindo infraestrutura, e ha"
-  },
-  {
-   "id": "t3_1xkz1y3",
-   "titulo": "[hiring] Senior level Software developer with proficient English",
-   "link": "https://www.reddit.com/r/hiring/comments/1xkz1y3/hiring_senior_level_software_developer_with/",
-   "sub": "hiring",
-   "autor": "/u/Wanderingindepth",
-   "publicado": "2026-11-01T09:44:57+00:00",
-   "texto": "What I'm building: A small, vetted team of strong engineers who pursue multiple remote roles together rather than alone. I'm not looking for a crowd — I'm looking for 3–5 people I can trust and invest in for the long term. The model, plainly: My team handles the pipeline — sourcing roles, tailoring applications, scheduling interviews. You never spend evenings filling out forms. You show up for interviews. That's your core job. You're the face and the technical voice. We prep you thoroughly beforehand and support you live during the session. After the offer, the load is shared. My tech assistants cover standups, tickets, reviews, and routine deliverables, so the operational weight of multiple roles stays manageable. You stay accountable for quality and outcomes — you're not a ghost, you're the lead. The result: meaningful additional income without the burnout that usually comes with juggling roles solo. Why this works better than going it alone: a single engineer applying alone gets maybe a handful of interviews a month. A coordinated team with a real pipeline gets consistent offers — and consistent offers are what create negotiating leverage and income stability. What I need from you: Strong communication and a professional presence in interviews — this is the one thing we can't build for you. Discretion and reliability. This is a long-term, trust-based collaboration, not a one-off gig. Genuine interest in the model as described What you get: A steady pipeline of vetted remot",
-   "palavras": [
-    "pipeline"
-   ],
-   "golpe": [],
-   "valores": [],
-   "encontrado": "2026-11-03T23:30:03+00:00",
-   "titulo_pt": "[contratação] Desenvolvedor de software de nível sênior com inglês proficiente",
-   "texto_pt": "O que estou construindo: uma equipe pequena e avaliada de engenheiros fortes que exercem diversas funções remotas juntos, em vez de sozinhos. Não procuro uma multidão - procuro de 3 a 5 pessoas em quem possa confiar e em quem possa investir a longo prazo. O modelo, claramente: minha equipe cuida do pipeline – sourcing de funções, adaptação de aplicativos, agendamento de entrevistas. Você nunca passa noites preenchendo formulários. Você aparece para entrevistas. Esse é o seu trabalho principal. Você é o rosto e a voz técnica. Nós o preparamos cuidadosamente com antecedência e o apoiamos ao vivo durante a sessão. Após a oferta, a carga é compartilhada. Meus assistentes técnicos cobrem reuniões, tickets, avaliações e resultados de rotina, para que o peso operacional de múltiplas funções permaneça gerenciável. Você permanece responsável pela qualidade e pelos resultados – você não é um fantasma, você é o líder. O resultado: uma renda adicional significativa sem o esgotamento que geralmente acompanha o malabarismo com papéis solo. Por que isso funciona melhor do que fazer tudo sozinho: um único engenheiro que se inscreve sozinho consegue talvez algumas entrevistas por mês. Uma equipe coordenada com um pipeline real obtém ofertas consistentes – e ofertas consistentes são o que cria alavancagem de negociação e estabilidade de receita. O que preciso de você: Comunicação forte e presença profissional nas entrevistas - isso é o que não podemos construir para você. Discrição e confiabilidade. Esta é uma colaboração de longo prazo baseada na confiança, não um trabalho único. Interesse genuíno no modelo conforme descrito O que você obtém: Um pipeline constante de controle remoto controlado"
-  },
-  {
-   "id": "t3_1xl395d",
-   "titulo": "[Hiring] Software License Troubleshooting",
-   "link": "https://www.reddit.com/r/forhire/comments/1xl395d/hiring_software_license_troubleshooting/",
-   "sub": "forhire",
-   "autor": "/u/ouijla",
-   "publicado": "2026-11-01T13:36:46+00:00",
-   "texto": "Hello, I’m looking for an experienced Reverse Engineering / Software Security Developer. I own a software bot that requires a license key to access. I need an expert to inspect the licensing mechanism, identify the issue, and help me restore access or repair the licensing system. Required skills: * Reverse Engineering * Python / JavaScript debugging * Software License Systems * Software Security This is a paid project. I’m ready to start immediately. Please send me your experience, portfolio, and estimated price. budget $15/hr+ Thank you. submitted by /u/ouijla [link] [comments]",
-   "palavras": [
-    "python",
-    "bot"
-   ],
-   "golpe": [],
-   "valores": [
-    "$15/hr"
-   ],
-   "encontrado": "2026-11-03T23:21:18+00:00",
-   "titulo_pt": "[Contratação] Solução de problemas de licença de software",
-   "texto_pt": "Olá, procuro um desenvolvedor experiente em Engenharia Reversa/Segurança de Software. Eu possuo um bot de software que requer uma chave de licença para acessar. Preciso de um especialista para inspecionar o mecanismo de licenciamento, identificar o problema e me ajudar a restaurar o acesso ou reparar o sistema de licenciamento. Habilidades necessárias: * Engenharia reversa * Depuração Python / JavaScript * Sistemas de licença de software * Segurança de software Este é um projeto pago. Estou pronto para começar imediatamente. Por favor, envie-me sua experiência, portfólio e preço estimado. orçamento $ 15 / hora + Obrigado. enviado por /u/ouijla [link] [comentários]"
-  },
-  {
-   "id": "t3_1xl1h1x",
-   "titulo": "[HIRING] Bot creator for E-commerce platform (Lazada)",
-   "link": "https://www.reddit.com/r/forhire/comments/1xl1h1x/hiring_bot_creator_for_ecommerce_platform_lazada/",
-   "sub": "forhire",
-   "autor": "/u/Gold_Rush5129",
-   "publicado": "2026-11-01T12:09:05+00:00",
-   "texto": "Hi there! I’m looking for someone to help me create a bot for an e commerce platform to automate purchases. Please send me a DM if you have experience with developing such e-commerce bots Budget : $50-90 USD I require other programmes to be developed as well which is open for discussion. submitted by /u/Gold_Rush5129 [link] [comments]",
-   "palavras": [
-    "automate",
-    "bot"
-   ],
-   "golpe": [],
-   "valores": [
-    "$50"
-   ],
-   "encontrado": "2026-11-03T23:21:18+00:00",
-   "titulo_pt": "[CONTRATAÇÃO] Criador de bot para plataforma de e-commerce (Lazada)",
-   "texto_pt": "Olá! Procuro alguém que me ajude a criar um bot para uma plataforma de comércio eletrônico para automatizar compras. Por favor, envie-me um DM se você tiver experiência no desenvolvimento de tais bots de comércio eletrônico. Orçamento: $ 50-90 USD Preciso que outros programas sejam desenvolvidos também, os quais estão abertos para discussão. enviado por /u/Gold_Rush5129 [link] [comentários]"
-  },
-  {
-   "id": "t3_1xl1cr4",
-   "titulo": "[Hiring] Software License Troubleshooting — $15/hr+",
-   "link": "https://www.reddit.com/r/forhire/comments/1xl1cr4/hiring_software_license_troubleshooting_15hr/",
-   "sub": "forhire",
-   "autor": "/u/ouijla",
-   "publicado": "2026-11-01T12:02:30+00:00",
-   "texto": "Hello, I’m looking for an experienced Reverse Engineering / Software Security Developer. I own a software bot that requires a license key to access. I need an expert to inspect the licensing mechanism, identify the issue, and help me restore access or repair the licensing system. Required skills: * Reverse Engineering * Python / JavaScript debugging * Software License Systems * Software Security This is a paid project. I’m ready to start immediately. Please send me your experience, portfolio, and estimated price. Thank you. submitted by /u/ouijla [link] [comments]",
-   "palavras": [
-    "python",
-    "bot"
-   ],
-   "golpe": [],
-   "valores": [
-    "$15/hr"
-   ],
-   "encontrado": "2026-11-03T23:21:18+00:00",
-   "titulo_pt": "[Contratação] Solução de problemas de licença de software – US$ 15/hora +",
-   "texto_pt": "Olá, procuro um desenvolvedor experiente em Engenharia Reversa/Segurança de Software. Eu possuo um bot de software que requer uma chave de licença para acessar. Preciso de um especialista para inspecionar o mecanismo de licenciamento, identificar o problema e me ajudar a restaurar o acesso ou reparar o sistema de licenciamento. Habilidades necessárias: * Engenharia reversa * Depuração Python / JavaScript * Sistemas de licença de software * Segurança de software Este é um projeto pago. Estou pronto para começar imediatamente. Por favor, envie-me sua experiência, portfólio e preço estimado. Obrigado. enviado por /u/ouijla [link] [comentários]"
   }
  ]
 }
